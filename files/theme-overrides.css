@@ -70,7 +70,7 @@
 #wsite-content .product-large .product-title,
 #wsite-content .product-small .product-title,
 .blog-sidebar h2 {
-  color: #080a0c !important;
+  color: var(--color-dark) !important;
 }
 .wsite-elements.wsite-footer h2,
 .wsite-elements.wsite-footer .product-long .product-title,
@@ -250,15 +250,50 @@
   }
 }
 .wsite-background {
-  background-image: url("/uploads/1/5/0/7/150771117/background-images/background-images/1404200096.jpeg") !important;
+  background-image: url("media/backgrounds/site-bg-academic.png") !important;
   background-repeat: no-repeat !important;
-  background-position: 25% 17.21% !important;
-  background-size: 100% !important;
-  background-color: transparent !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  background-color: #eef6ff !important;
 }
 body.wsite-background {
   background-attachment: fixed !important;
 }
 .wsite-background.wsite-custom-background {
   background-size: cover !important;
+}
+
+/* ---- Palette refresh: align legacy theme chrome (mobile slide-out menu,
+   body backdrop) with the navy/gold design system in site-theme.css ---- */
+body {
+  background-color: #eef6ff !important;
+  background-image: url("media/backgrounds/site-bg-academic.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}
+.wrapper,
+#main-wrap {
+  background: transparent !important;
+}
+.wsite-custom-background {
+  background-image: none !important;
+}
+.header-wrap .nav-wrap,
+.no-header-page .header-wrap .nav-wrap {
+  background-color: #eef6ff !important;
+  background-image: url("media/backgrounds/site-bg-academic.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  border-bottom: 1px solid rgba(15, 34, 54, 0.08) !important;
+}
+.navmobile-wrapper {
+  background: var(--color-dark) !important;
+}
+#navmobile li a:hover,
+#navmobile li#active a {
+  border-bottom-color: var(--color-accent) !important;
 }

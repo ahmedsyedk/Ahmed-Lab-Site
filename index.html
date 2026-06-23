@@ -1,304 +1,503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>USC ALFRED E. MANN SCHOOL OF PHARMACY AND PHARMACEUTICAL SCIENCES - Home</title>
+  <head>
+    <title>
+      USC ALFRED E. MANN SCHOOL OF PHARMACY AND PHARMACEUTICAL SCIENCES - Home
+    </title>
 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link
+      id="wsite-base-style"
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn11.editmysite.com/css/sites.css?buildtime=1234"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="files/main_style.css?1782151360"
+      title="wsite-theme-css"
+    />
+    <link rel="stylesheet" type="text/css" href="files/site-theme.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="files/theme-overrides.css" />
+    <script src="files/templateArtifacts.js?1758841578"></script>
+    <script>
+      var STATIC_BASE = "//cdn1.editmysite.com/";
+      var ASSETS_BASE = "//cdn11.editmysite.com/";
+      var STYLE_PREFIX = "wsite";
+    </script>
+    <script src="https://cdn11.editmysite.com/js/jquery-1.8.3.min.js"></script>
 
-		
-		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn11.editmysite.com/css/sites.css?buildtime=1234" />
-<link rel="stylesheet" type="text/css" href="files/main_style.css?1782151360" title="wsite-theme-css" />
-<link rel="stylesheet" type="text/css" href="files/site-theme.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<link rel="stylesheet" type="text/css" href="files/theme-overrides.css" />
-		<script src='files/templateArtifacts.js?1758841578'></script>
-<script>
-var STATIC_BASE = '//cdn1.editmysite.com/';
-var ASSETS_BASE = '//cdn11.editmysite.com/';
-var STYLE_PREFIX = 'wsite';
-</script>
-<script src='https://cdn11.editmysite.com/js/jquery-1.8.3.min.js'></script>
+    <script
+      type="text/javascript"
+      src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"
+    ></script>
+    <script src="http://cdn11.editmysite.com/js/site/main.js?buildtime=1234"></script>
+    <script type="text/javascript">
+      function initCustomerAccountsModels() {
+        (function () {
+          _W.setup_rpc({
+            url: "\/ajax\/api\/JsonRPC\/CustomerAccounts\/",
+            actions: {
+              CustomerAccounts: [
+                { name: "login", len: 2, multiple: false, standalone: false },
+                { name: "logout", len: 0, multiple: false, standalone: false },
+                {
+                  name: "getSessionDetails",
+                  len: 0,
+                  multiple: false,
+                  standalone: false,
+                },
+                {
+                  name: "getAccountDetails",
+                  len: 0,
+                  multiple: false,
+                  standalone: false,
+                },
+                {
+                  name: "getOrders",
+                  len: 0,
+                  multiple: false,
+                  standalone: false,
+                },
+                {
+                  name: "register",
+                  len: 4,
+                  multiple: false,
+                  standalone: false,
+                },
+                {
+                  name: "emailExists",
+                  len: 1,
+                  multiple: false,
+                  standalone: false,
+                },
+                {
+                  name: "passwordReset",
+                  len: 1,
+                  multiple: false,
+                  standalone: false,
+                },
+                {
+                  name: "passwordUpdate",
+                  len: 3,
+                  multiple: false,
+                  standalone: false,
+                },
+                {
+                  name: "validateSession",
+                  len: 1,
+                  multiple: false,
+                  standalone: false,
+                },
+              ],
+            },
+            namespace: "_W.CustomerAccounts.RPC",
+          });
+          _W.setup_model_rpc({
+            rpc_namespace: "_W.CustomerAccounts.RPC",
+            model_namespace: "_W.CustomerAccounts.BackboneModelData",
+            collection_namespace: "_W.CustomerAccounts.BackboneCollectionData",
+            bootstrap_namespace: "_W.CustomerAccounts.BackboneBootstrap",
+            models: {
+              CustomerAccounts: {
+                _class: "CustomerAccounts.Model.CustomerAccounts",
+                defaults: null,
+                validation: null,
+                types: null,
+                idAttribute: null,
+                keydefs: null,
+              },
+            },
+            collections: {
+              CustomerAccounts: {
+                _class: "CustomerAccounts.Collection.CustomerAccounts",
+              },
+            },
+            bootstrap: [],
+          });
+        })();
+      }
+      if (document.createEvent && document.addEventListener) {
+        var initEvt = document.createEvent("Event");
+        initEvt.initEvent("customerAccountsModelsInitialized", true, false);
+        document.dispatchEvent(initEvt);
+      } else if (document.documentElement.initCustomerAccountsModels === 0) {
+        document.documentElement.initCustomerAccountsModels++;
+      }
+    </script>
+    <script type="text/javascript">
+      _W = _W || {};
+      _W.securePrefix = "UNSET";
+    </script>
+    <script>
+      _W = _W || {};
+      _W.customerLocale = "en_US";
+      _W.storeName = null;
+      _W.isCheckoutReskin = false;
+      _W.storeCountry = "US";
+      _W.storeCurrency = "USD";
+      _W.storeEuPrivacyPolicyUrl = "";
+      com_currentSite = "756358487141760399";
+      com_userID = "150771117";
+    </script>
+    <script type="text/javascript">
+      _W.configDomain = "";
+    </script>
+    <script>
+      _W.relinquish && _W.relinquish();
+    </script>
+    <script
+      type="text/javascript"
+      src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"
+    ></script>
+    <script>
+      _W.themePlugins = [];
+    </script>
+    <script type="text/javascript">
+      _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js";
+    </script>
+    <script type="text/javascript">
+      <!-
+      var IS_ARCHIVE = 1;
 
-<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
-<script src="http://cdn11.editmysite.com/js/site/main.js?buildtime=1234"></script><script type="text/javascript">
-		function initCustomerAccountsModels() {
-					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
-_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
-})();
-		}
-		if(document.createEvent && document.addEventListener) {
-			var initEvt = document.createEvent('Event');
-			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
-			document.dispatchEvent(initEvt);
-		} else if(document.documentElement.initCustomerAccountsModels === 0){
-			document.documentElement.initCustomerAccountsModels++
-		}
-		</script>
-		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
-			_W.customerLocale = "en_US";
-			_W.storeName = null;
-			_W.isCheckoutReskin = false;
-			_W.storeCountry = "US";
-			_W.storeCurrency = "USD";
-			_W.storeEuPrivacyPolicyUrl = "";
-			com_currentSite = "756358487141760399";
-			com_userID = "150771117";</script><script type="text/javascript">_W.configDomain = "";</script><script>_W.relinquish && _W.relinquish()</script>
-<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
-	var IS_ARCHIVE = 1;
-	
-	function initFlyouts(){
-		initPublishedFlyoutMenus(
-			[{"id":"351838238670409242","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"105554541409183497","title":"Members","url":"members.html","target":"","nav_menu":false,"nonclickable":false},{"id":"888503303817246873","title":"Updates","url":"updates.html","target":"","nav_menu":false,"nonclickable":false},{"id":"379524370358933241","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
-			"351838238670409242",
-			'',
-			'active',
-			false,
-			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
-			{}
-		)
-	}
-//-->
-</script>
-		
-		
-	</head>
-	<body class="header-page  wsite-theme-light  wsite-page-index"><div class="wrapper">
-		<div class="header-wrap">
-			<div class="nav-wrap">
-				<div id="logo"><span class="wsite-logo">
+      function initFlyouts(){
+      initPublishedFlyoutMenus(
+      [{"id":"351838238670409242","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"105554541409183497","title":"Members","url":"members.html","target":"","nav_menu":false,"nonclickable":false},{"id":"888503303817246873","title":"Updates","url":"updates.html","target":"","nav_menu":false,"nonclickable":false},{"id":"379524370358933241","title":"Contact","url":"contact.html","target":"","nav_menu":false,"nonclickable":false}],
+      "351838238670409242",
+      '',
+      'active',
+      false,
+      {"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+      {}
+      )
+      }
+      //-->
+    </script>
+  </head>
 
-	<a href="index.html" class="site-logo-link">
-	
-	<span id="wsite-title" class="site-logo-lockup"><span class="site-logo-main">The Ahmed <span class="site-logo-accent">Lab</span></span><span class="site-logo-sub">USC Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences</span></span>
-	
-	</a>
+  <body class="header-page wsite-theme-light wsite-page-index">
+    <div class="wrapper">
+      <div class="header-wrap">
+        <div class="nav-wrap">
+          <div id="logo">
+            <span class="wsite-logo">
+              <a href="index.html" class="site-logo-link">
+                <span id="wsite-title" class="site-logo-lockup"
+                  ><span class="site-logo-main"
+                    >The Ahmed <span class="site-logo-accent">Lab</span></span
+                  ><span class="site-logo-sub"
+                    >USC Alfred E. Mann School of Pharmacy and Pharmaceutical
+                    Sciences</span
+                  ></span
+                >
+              </a>
+            </span>
+          </div>
+          <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
+          <div class="menu">
+            <div class="container">
+              <div class="search"></div>
+              <ul class="wsite-menu-default">
+                <li id="active" class="wsite-menu-item-wrap">
+                  <a href="index.html" class="wsite-menu-item"> Home </a>
+                </li>
+                <li id="pg105554541409183497" class="wsite-menu-item-wrap">
+                  <a href="members.html" class="wsite-menu-item"> Members </a>
+                </li>
+                <li id="pg888503303817246873" class="wsite-menu-item-wrap">
+                  <a href="updates.html" class="wsite-menu-item"> Updates </a>
+                </li>
+                <li id="pg379524370358933241" class="wsite-menu-item-wrap">
+                  <a href="contact.html" class="wsite-menu-item"> Contact </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-</span></div>
-				<a class="hamburger" aria-label="Menu" href="#"><span></span></a>
-				<div class="menu">
-					<div class="container">
-						<div class="search"></div>
-						<ul class="wsite-menu-default">
-								<li id="active" class="wsite-menu-item-wrap">
-									<a
-												href="index.html"
-										class="wsite-menu-item"
-										>
-										Home
-									</a>
-									
-								</li>
-								<li id="pg105554541409183497" class="wsite-menu-item-wrap">
-									<a
-												href="members.html"
-										class="wsite-menu-item"
-										>
-										Members
-									</a>
-									
-								</li>
-								<li id="pg888503303817246873" class="wsite-menu-item-wrap">
-									<a
-												href="updates.html"
-										class="wsite-menu-item"
-										>
-										Updates
-									</a>
-									
-								</li>
-								<li id="pg379524370358933241" class="wsite-menu-item-wrap">
-									<a
-												href="contact.html"
-										class="wsite-menu-item"
-										>
-										Contact
-									</a>
-									
-								</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+        <div class="banner-wrap">
+          <div class="wsite-elements wsite-not-footer wsite-header-elements">
+            <div class="wsite-section-wrap">
+              <div
+                class="wsite-section wsite-header-section wsite-section-bg-image hero-slider"
+                style="height: 592px"
+              >
+                <div
+                  class="hero-slide hero-slide--active"
+                  style="
+                    background-image: url(media/backgrounds/1598464197.jpg);
+                    background-position: 50% 60%;
+                  "
+                ></div>
+                <div
+                  class="hero-slide"
+                  style="
+                    background-image: url(media/syed-research-group-mcc_orig.jpg);
+                    background-position: 50% 25%;
+                  "
+                ></div>
+                <div
+                  class="hero-slide"
+                  style="
+                    background-image: url(media/img-2231_orig.jpg);
+                    background-position: 40% 25%;
+                  "
+                ></div>
+                <div
+                  class="hero-slide"
+                  style="
+                    background-image: url(media/usc-adv-pharmacy-medchem-202306-21_orig.jpg);
+                    background-position: 65% 35%;
+                  "
+                ></div>
+                <div
+                  class="hero-slide"
+                  style="
+                    background-image: url(media/usc-adv-pharmacy-medchem-202306-31_orig.jpg);
+                    background-position: 50% 35%;
+                  "
+                ></div>
+                <div
+                  class="hero-slide"
+                  style="
+                    background-image: url(media/screenshot-2025-09-25-at-4-05-46-pm_orig.png);
+                    background-position: 50% 30%;
+                  "
+                ></div>
+                <div class="hero-overlay"></div>
+                <div class="wsite-section-content">
+                  <div class="container">
+                    <div class="banner">
+                      <div class="wsite-section-elements hero-content">
+                        <span class="hero-content__eyebrow">USC Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences</span>
+                        <h1 class="hero-content__title">Engineering Tomorrow's <span class="hero-content__accent">Medicines</span></h1>
+                        <p class="hero-content__tagline">Medicinal chemistry and drug discovery research, from molecule to mechanism.</p>
+                        <div class="hero-content__actions">
+                          <a class="btn-site btn-site--accent" href="contact.html">Contact Us</a>
+                          <a class="btn-site btn-site--light" href="members.html">Meet the Team</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class=""></div>
+              </div>
+            </div>
+          </div>
 
-			<div class="banner-wrap">
-				<div class="wsite-elements wsite-not-footer wsite-header-elements">
-	<div class="wsite-section-wrap">
-	<div class="wsite-section wsite-header-section wsite-section-bg-image hero-slider" style="height: 592px;">
-		<div class="hero-slide hero-slide--active" style="background-image:url(/uploads/1/5/0/7/150771117/background-images/background-images/1598464197.jpg);background-position:50% 20%;"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/syed-research-group-mcc_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/image003_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/img-2231_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-21_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-31_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/img-2227-1_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-10_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/image005_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/image004_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-35-1-min_orig.jpg);"></div>
-		<div class="hero-slide" style="background-image:url(/uploads/1/5/0/7/150771117/screenshot-2025-09-25-at-4-05-46-pm_orig.png);"></div>
-		<div class="hero-overlay"></div>
-		<div class="wsite-section-content">
+          <script>
+            (function () {
+              var slides = document.querySelectorAll(
+                ".hero-slider .hero-slide",
+              );
+              if (slides.length < 2) return;
+              var current = 0;
+              setInterval(function () {
+                slides[current].classList.remove("hero-slide--active");
+                current = (current + 1) % slides.length;
+                slides[current].classList.add("hero-slide--active");
+              }, 5000);
+            })();
+          </script>
+        </div>
+      </div>
+      <!--/.header-wrap-->
 
-					<div class="container">
-						<div class="banner">
-				<div class="wsite-section-elements">
-				</div>
-			</div>
-					</div>
+      <div id="main-wrap">
+        <div id="wsite-content" class="wsite-elements wsite-not-footer">
+          <div class="wsite-section-wrap">
+            <div
+              class="wsite-section wsite-body-section wsite-background-7 wsite-custom-background"
+            >
+              <div class="wsite-section-content">
+                <div class="wsite-section-elements site-section">
+                  <div class="site-container">
+                    <span class="site-eyebrow"
+                      >The Ahmed Lab · USC Mann School of Pharmacy</span
+                    >
+                    <h2 class="site-heading site-heading--lg">
+                      Where Molecules Become
+                      <span class="site-heading__accent">Medicines</span>
+                    </h2>
+                    <div class="site-rule"></div>
+                    <p class="site-tagline" style="margin-bottom: 48px">
+                      Designing the next generation of small-molecule
+                      therapeutics, one bond at a time.
+                    </p>
 
-		</div>
-		<div class=""></div>
-	</div>
-</div>
+                    <div class="intro-grid">
+                      <div class="intro-grid__text">
+                        Our research interests include bioorganic and medicinal
+                        chemistry, structure/ligand-based drug design and
+                        development, biorthogonal chemistry, heterocyclic
+                        chemistry, mechanistic study of novel small-molecule
+                        modulators of diverse range of therapeutic targets, and
+                        development of new synthetic methodologies.
+                        <div style="margin-top: 32px">
+                          <a class="btn-site" href="contact.html">Contact us</a>
+                        </div>
+                      </div>
+                      <div class="intro-grid__image">
+                        <img src="media/picture2_orig.png" alt="Picture" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wsite-section-wrap">
+            <div
+              class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
+            >
+              <div class="wsite-section-content">
+                <div class="wsite-section-elements site-section">
+                  <div class="site-container">
+                    <h2 class="site-heading">
+                      Fresh From The
+                      <span class="site-heading__accent">Lab</span>
+                    </h2>
+                    <div class="site-rule"></div>
+                    <p class="site-subtext">
+                      Recent news, awards, and publications from the Ahmed Lab.
+                    </p>
 
-</div>
+                    <div
+                      id="updates-preview"
+                      class="updates-preview-grid"
+                      data-limit="2"
+                    ></div>
 
-<script>
-(function(){
-  var slides = document.querySelectorAll('.hero-slider .hero-slide');
-  if (slides.length < 2) return;
-  var current = 0;
-  setInterval(function(){
-    slides[current].classList.remove('hero-slide--active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('hero-slide--active');
-  }, 5000);
-})();
-</script>
+                    <div class="updates-preview__footer">
+                      <a class="btn-site" href="updates.html"
+                        >View All Updates</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wsite-section-wrap">
+            <div
+              class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
+            >
+              <div class="wsite-section-content">
+                <div
+                  class="wsite-section-elements site-section site-section--alt"
+                >
+                  <div class="site-container">
+                    <h2 class="site-heading">
+                      Behind The <span class="site-heading__accent">Bench</span>
+                    </h2>
+                    <div class="site-rule"></div>
+                    <p class="site-subtext">
+                      A look inside the lab — the people, the process, and the
+                      milestones along the way.
+                    </p>
 
-			</div>
-		</div><!--/.header-wrap-->
+                    <div class="gallery-grid">
+                      <div class="gallery-grid__feature">
+                        <img
+                          src="media/syed-research-group-mcc_orig.jpg"
+                          alt="Picture"
+                        />
+                      </div>
+                      <img src="media/image003_orig.jpg" alt="Picture" />
+                      <img src="media/img-2231_orig.jpg" alt="Picture" />
+                      <img
+                        src="media/usc-adv-pharmacy-medchem-202306-21_orig.jpg"
+                        alt="Picture"
+                      />
+                      <img
+                        src="media/usc-adv-pharmacy-medchem-202306-31_orig.jpg"
+                        alt="Picture"
+                      />
+                      <img src="media/img-2227-1_orig.jpg" alt="Picture" />
+                      <img
+                        src="media/usc-adv-pharmacy-medchem-202306-10_orig.jpg"
+                        alt="Picture"
+                      />
+                      <img src="media/image005_orig.jpg" alt="Picture" />
+                      <img src="media/image004_orig.jpg" alt="Picture" />
+                      <img
+                        src="media/usc-adv-pharmacy-medchem-202306-35-1-min_orig.jpg"
+                        alt="Picture"
+                      />
+                      <img
+                        src="media/screenshot-2025-09-25-at-4-05-46-pm_orig.png"
+                        alt="Picture"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="wsite-section-wrap">
+            <div class="wsite-section wsite-body-section site-footer">
+              <div class="wsite-section-content">
+                <div class="wsite-section-elements">
+                  <div class="site-container">
+                    <div class="site-footer__row">
+                      <span class="site-footer__brand">The Ahmed Lab</span>
+                      <nav class="site-footer__nav">
+                        <a href="index.html">Home</a>
+                        <a href="updates.html">Updates</a>
+                        <a href="contact.html">Contact</a>
+                      </nav>
+                    </div>
 
-		<div id="main-wrap">
-			<div id="wsite-content" class="wsite-elements wsite-not-footer">
-<div class="wsite-section-wrap">
-	<div class="wsite-section wsite-body-section wsite-background-7 wsite-custom-background">
-		<div class="wsite-section-content">
-			<div class="wsite-section-elements site-section">
-			<div class="site-container">
-			<h2 class="site-heading site-heading--lg">Welcome to<br />The Ahmed Lab</h2>
-			<div class="site-rule"></div>
+                    <div class="site-footer__copyright">
+                      &copy; 2024 University of Southern California HSC
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="intro-grid">
-<div class="intro-grid__text">Our research interests include bioorganic and medicinal chemistry, structure/ligand-based drug design and development, biorthogonal chemistry, heterocyclic chemistry, mechanistic study of novel small-molecule modulators of diverse range of therapeutic targets, and development of new synthetic methodologies.
-<div style="margin-top:32px;"><a class="btn-site" href="contact.html">Contact us</a></div>
-</div>
-<div class="intro-grid__image">
-<img src="uploads/1/5/0/7/150771117/picture2_orig.png" alt="Picture" />
-</div>
-</div>
-			</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="wsite-section-wrap">
-	<div class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background">
-		<div class="wsite-section-content">
-			<div class="wsite-section-elements site-section site-section--alt">
-			<div class="site-container">
-			<h2 class="site-heading">Gallery</h2>
-			<div class="site-rule"></div>
+      <div class="sticky-footer-push"></div>
+    </div>
+    <!--/.wrapper-->
 
-<div class="gallery-grid">
-<div class="gallery-grid__feature"><img src="uploads/1/5/0/7/150771117/syed-research-group-mcc_orig.jpg" alt="Picture" /></div>
-<img src="uploads/1/5/0/7/150771117/image003_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/img-2231_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-21_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-31_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/img-2227-1_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-10_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/image005_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/image004_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/usc-adv-pharmacy-medchem-202306-35-1-min_orig.jpg" alt="Picture" />
-<img src="uploads/1/5/0/7/150771117/screenshot-2025-09-25-at-4-05-46-pm_orig.png" alt="Picture" />
-</div>
-			</div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="wsite-section-wrap">
-	<div class="wsite-section wsite-body-section wsite-background-11 wsite-custom-background">
-		<div class="wsite-section-content">
-			<div class="wsite-section-elements site-section site-section--tight">
-			<div class="site-container">
-			<nav style="text-align:center;margin-bottom:24px;font-family:'Inter',sans-serif;font-weight:500;letter-spacing:0.5px;text-transform:uppercase;font-size:14px;">
-			<a href="index.html" style="margin:0 18px;color:var(--color-dark);">Home</a>
-			<a href="updates.html" style="margin:0 18px;color:var(--color-dark);">Updates</a>
-			<a href="contact.html" style="margin:0 18px;color:var(--color-dark);">Contact</a>
-			</nav>
+    <div class="navmobile-wrapper">
+      <div id="navmobile" class="nav">
+        <ul class="wsite-menu-default">
+          <li id="active" class="wsite-menu-item-wrap">
+            <a href="index.html" class="wsite-menu-item"> Home </a>
+          </li>
+          <li id="pg105554541409183497" class="wsite-menu-item-wrap">
+            <a href="members.html" class="wsite-menu-item"> Members </a>
+          </li>
+          <li id="pg888503303817246873" class="wsite-menu-item-wrap">
+            <a href="updates.html" class="wsite-menu-item"> Updates </a>
+          </li>
+          <li id="pg379524370358933241" class="wsite-menu-item-wrap">
+            <a href="contact.html" class="wsite-menu-item"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-			<h2 class="site-heading" style="font-size:18px;">University of Southern California HSC</h2>
-
-			<div class="site-subtext" style="margin-bottom:0;">Copyright &copy; 2024</div>
-			</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-</div>
-
-		</div>
-
-		<div class="sticky-footer-push"></div>
-
-	</div><!--/.wrapper-->
-
-	<div class="navmobile-wrapper">
-		<div id="navmobile" class="nav"><ul class="wsite-menu-default">
-		<li id="active" class="wsite-menu-item-wrap">
-			<a
-						href="index.html"
-				class="wsite-menu-item"
-				>
-				Home
-			</a>
-			
-		</li>
-		<li id="pg105554541409183497" class="wsite-menu-item-wrap">
-			<a
-						href="members.html"
-				class="wsite-menu-item"
-				>
-				Members
-			</a>
-			
-		</li>
-		<li id="pg888503303817246873" class="wsite-menu-item-wrap">
-			<a
-						href="updates.html"
-				class="wsite-menu-item"
-				>
-				Updates
-			</a>
-			
-		</li>
-		<li id="pg379524370358933241" class="wsite-menu-item-wrap">
-			<a
-						href="contact.html"
-				class="wsite-menu-item"
-				>
-				Contact
-			</a>
-			
-		</li>
-</ul>
-</div>
-	</div>
-
-  <script type="text/javascript" src="files/theme/files/mobile.js"></script>
-  <script type="text/javascript" src="files/theme/files/plugins.js"></script>
-  <script type="text/javascript" src="files/theme/files/custom.js"></script>
+    <script type="text/javascript" src="files/theme/files/mobile.js"></script>
+    <script type="text/javascript" src="files/theme/files/plugins.js"></script>
+    <script type="text/javascript" src="files/theme/files/custom.js"></script>
+    <script type="text/javascript" src="files/updates-data.js"></script>
+    <script type="text/javascript" src="files/updates.js"></script>
 
     <div id="customer-accounts-app"></div>
     <script src="http://cdn11.editmysite.com/js/site/main-customer-accounts-site.js?buildtime=1234"></script>
-
-		
-	</body>
+  </body>
 </html>

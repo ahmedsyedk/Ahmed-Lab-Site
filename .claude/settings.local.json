@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5500/index.html)",
+      "Skill(run)",
+      "Bash(npx --yes playwright --version)",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(sed -i '' 's/waitForTimeout\\(300\\)/waitForTimeout\\(1600\\)/' shot.js)",
+      "Bash(node shot.js)",
+      "Bash(grep -v \":0$\")",
+      "Bash(echo \"exit: $?\")",
+      "Bash(node chem_zoom.js)",
+      "Bash(node chem_check.js)",
+      "Bash(python3 -c \"print\\('python ok'\\)\")",
+      "Read(//Users/pa1/Library/Caches/ms-playwright/**)",
+      "Bash(npm ls *)",
+      "Bash(pkill -f \"http.server 8743\")",
+      "Bash(pkill -f \"http.server 8744\")",
+      "Bash(chmod 644 /Users/pa1/MCC-Lab/Ahmed-Lab-Site/media/update-default.png)",
+      "Bash(node *)",
+      "Bash(curl -s http://localhost:8745/files/site-theme.css)",
+      "Bash(curl -s http://localhost:8746/index.html)",
+      "Bash(python3 -c ' *)",
+      "Bash(cp \"/Users/pa1/.claude/image-cache/d46ae8ba-a071-4298-be9c-1826600b8fcb/3.png\" /Users/pa1/MCC-Lab/Ahmed-Lab-Site/media/backgrounds/site-bg-academic.png)",
+      "Bash(chmod 644 /Users/pa1/MCC-Lab/Ahmed-Lab-Site/media/backgrounds/site-bg-academic.png)",
+      "Bash(curl -s \"http://cdn11.editmysite.com/css/sites.css?buildtime=1234\" -o /private/tmp/claude-501/-Users-pa1-MCC-Lab-Ahmed-Lab-Site/d46ae8ba-a071-4298-be9c-1826600b8fcb/scratchpad/sites.css)",
+      "Bash(curl -s http://localhost:8751/members.html)",
+      "Bash(pkill -f \"http.server 8753\")",
+      "Bash(pkill -f \"http.server 8754\")",
+      "Bash(rm -f /private/tmp/claude-501/-Users-pa1-MCC-Lab-Ahmed-Lab-Site/d46ae8ba-a071-4298-be9c-1826600b8fcb/scratchpad/shotcontact.js /private/tmp/claude-501/-Users-pa1-MCC-Lab-Ahmed-Lab-Site/d46ae8ba-a071-4298-be9c-1826600b8fcb/scratchpad/contact-*.png)",
+      "Bash(pkill -f \"http.server 8756\")",
+      "Bash(pkill -f \"http.server 8762\")",
+      "Bash(python3 *)"
+    ]
+  }
+}
