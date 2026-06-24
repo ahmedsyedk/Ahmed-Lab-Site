@@ -250,7 +250,7 @@
   }
 }
 .wsite-background {
-  background-image: url("media/backgrounds/site-bg-academic.png") !important;
+  background-image: url("../media/backgrounds/site-bg-academic.png") !important;
   background-repeat: no-repeat !important;
   background-position: top center !important;
   background-size: cover !important;
@@ -267,7 +267,7 @@ body.wsite-background {
    body backdrop) with the navy/gold design system in site-theme.css ---- */
 body {
   background-color: #eef6ff !important;
-  background-image: url("media/backgrounds/site-bg-academic.png") !important;
+  background-image: url("../media/backgrounds/site-bg-academic.png") !important;
   background-repeat: no-repeat !important;
   background-position: top center !important;
   background-size: cover !important;
@@ -283,7 +283,7 @@ body {
 .header-wrap .nav-wrap,
 .no-header-page .header-wrap .nav-wrap {
   background-color: #eef6ff !important;
-  background-image: url("media/backgrounds/site-bg-academic.png") !important;
+  background-image: url("../media/backgrounds/site-bg-academic.png") !important;
   background-repeat: no-repeat !important;
   background-position: top center !important;
   background-size: cover !important;
