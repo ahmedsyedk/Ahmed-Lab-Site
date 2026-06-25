@@ -21,9 +21,21 @@
 
 /* ---- Hero slideshow (home page banner) ---- */
 .hero-slider{
+  display:block !important;
   position:relative;
   overflow:hidden;
   background-image:none !important;
+  height:auto !important;
+  aspect-ratio:2.2 / 1;
+  min-height:420px;
+  max-height:85vh;
+}
+@media screen and (max-width:600px){
+  .hero-slider{
+    aspect-ratio:4 / 5;
+    min-height:380px;
+    max-height:80vh;
+  }
 }
 .hero-slide{
   position:absolute;

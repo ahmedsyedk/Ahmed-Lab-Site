@@ -30,7 +30,15 @@
       "Bash(rm -f /private/tmp/claude-501/-Users-pa1-MCC-Lab-Ahmed-Lab-Site/d46ae8ba-a071-4298-be9c-1826600b8fcb/scratchpad/shotcontact.js /private/tmp/claude-501/-Users-pa1-MCC-Lab-Ahmed-Lab-Site/d46ae8ba-a071-4298-be9c-1826600b8fcb/scratchpad/contact-*.png)",
       "Bash(pkill -f \"http.server 8756\")",
       "Bash(pkill -f \"http.server 8762\")",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(git pull *)",
+      "Bash(git ls-tree *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(grep -v \"^theme$\")",
+      "Bash(lsof -ti:8766)",
+      "Bash(xargs -r kill)"
     ]
   }
 }
