@@ -40,7 +40,7 @@ var SITE_MEMBERS = {
     {
       "name": "PAVAN KUMAR RAMESH",
       "role": "MASTER'S STUDENT, USC VITERBI SCHOOL OF ENGINEERING",
-      "photo": "",
+      "photo": "media/pavan-kumar-ramesh.jpg",
       "bio": "I am a Master&rsquo;s student in Computer Science at USC Viterbi and the Lab Manager in the Medicinal Chemistry Core Lab. I manage and maintain computational tools such as StarDrop, ensuring functionality and efficiency, and support lab operations by maintaining the chemical inventory, processing supply orders, tracking synthesis-related expenses, and preparing monthly invoices and budget analyses for collaborators. Before USC, I worked as a Developer Associate at SAP Labs and a Technical Analyst at Oracle, building backend systems, CI/CD pipelines, and cloud data infrastructure. My academic interests center on systems engineering and AI &mdash; including operating-system kernel development, distributed query engines, and machine learning pipelines for anomaly detection."
     }
   ],
