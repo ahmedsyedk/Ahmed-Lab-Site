@@ -28,7 +28,7 @@ var SITE_MEMBERS = {
     {
       "name": "DHANVI GAJJAR",
       "role": "MASTER'S STUDENT, USC MANN",
-      "photo": "media/screenshot-2025-09-25-at-3-37-31-pm_orig.png",
+      "photo": "media/Dhanvi.jpeg",
       "bio": "I am a Masters student in Pharmaceutical Sciences at USC and Research Assistant working under Dr. Syed Ahmed in the Medicinal Chemistry Core. My research focuses on discovery and early development of small-molecule therapeutics, including CALPAIN-2 inhibitors for pulmonary injury, cGAS&ndash;STING antagonists targeting neuroinflammation in Alzheimer&rsquo;s disease, TSPO-directed scaffolds for antifibrotic activity in MASH and a peptide-based oncology effort. I combine structure-guided design and docking with synthesis, purification and analytical characterization&nbsp;and support ADME, PK decision-making. I work closely with collaborators across University of Alabama, USC Mann School Dean&rsquo;s Laboratory and UC Davis to drive cross-disciplinary progress from concept to preclinical validation. In my leisure time I enjoy cooking different cuisines, travelling and watching movies."
     },
     {
@@ -41,7 +41,7 @@ var SITE_MEMBERS = {
       "name": "PAVAN KUMAR RAMESH",
       "role": "MASTER'S STUDENT, USC VITERBI SCHOOL OF ENGINEERING",
       "photo": "media/pavan-kumar-ramesh.jpg",
-      "bio": "I am a Master&rsquo;s student in Computer Science at USC Viterbi and the Lab Manager in the Medicinal Chemistry Core Lab. I manage and maintain computational tools such as StarDrop, ensuring functionality and efficiency, and support lab operations by maintaining the chemical inventory, processing supply orders, tracking synthesis-related expenses, and preparing monthly invoices and budget analyses for collaborators. Before USC, I worked as a Developer Associate at SAP Labs and a Technical Analyst at Oracle, building backend systems, CI/CD pipelines, and cloud data infrastructure. My academic interests center on systems engineering and AI &mdash; including operating-system kernel development, distributed query engines, and machine learning pipelines for anomaly detection."
+      "bio": "I am a Master&rsquo;s student in Computer Science at USC Viterbi and the Lab Manager in the Medicinal Chemistry Core Lab. I manage and maintain computational tools such as StarDrop, ensuring functionality and efficiency, and support lab operations by maintaining the chemical inventory, processing supply orders, tracking synthesis-related expenses, and preparing monthly invoices and budget analyses for collaborators. Before USC, I worked as a Developer Associate at SAP Labs and a Technical Analyst at Oracle, building backend systems, CI/CD pipelines, and cloud data infrastructure. My academic interests center on systems engineering and AI, including operating-system kernel development, distributed query engines, and machine learning pipelines for anomaly detection."
     }
   ],
   "former": [

@@ -1,6 +1,15 @@
 var SITE_UPDATES = {
   "posts": [
     {
+      "title": "NIH R01 Grant Award — Discovery of Novel Small Molecules for Cancer Therapeutics",
+      "date": "06/09/2022",
+      "excerpt": "Syed Kaleem Ahmed, PhD is part of an interdisciplinary USC team awarded a three-year, $2 million NIH R01 grant for the project \"Discovery of Novel Small Molecules Targeting a Circadian Regulatory Complex for Cancer Therapeutics.\"",
+      "body": "Syed Kaleem Ahmed, PhD is part of an interdisciplinary USC team awarded a three-year, $2 million NIH R01 grant on Thursday, June 9 for the project \"Discovery of Novel Small Molecules Targeting a Circadian Regulatory Complex for Cancer Therapeutics.\" Steve Kay, PhD is Project Director/Principal Investigator.",
+      "images": [
+        "media/nih-r01-grant-news.png"
+      ]
+    },
+    {
       "title": "Poster presentation award at Moving Targets conference",
       "date": "08/22/2024",
       "excerpt": "Nader Mostowfi was announced as one of the winners of the Young Investigators Award at the Moving Targets Conference on USC Health Science Campus. Congratulations, Nader!",

@@ -22,6 +22,7 @@
 /* ---- Hero slideshow (home page banner) ---- */
 .hero-slider{
   display:block !important;
+  width:100% !important;
   position:relative;
   overflow:hidden;
   background-image:none !important;
@@ -722,11 +723,13 @@
 }
 .post-card__gallery img{
   width:100%;
-  height:260px;
-  object-fit:cover;
+  height:auto;
+  max-height:480px;
+  object-fit:contain;
   display:block;
   border:1px solid var(--color-border);
   border-radius:8px;
+  background:#fff;
   transition:transform .3s ease, box-shadow .3s ease;
 }
 .post-card__gallery img:hover{
