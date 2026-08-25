@@ -1,6 +1,13 @@
 var SITE_UPDATES = {
   "posts": [
     {
+      "title": "2026 Broad Center–SPARK at USC Innovation Catalyst Grant in Regenerative Medicine",
+      "date": "08/24/2026",
+      "excerpt": "An interdisciplinary USC team representing Mann and Keck, Syed Ahmed, PhD and Albert Almada, PhD, has been selected for the 2026 Broad Center–SPARK at USC Innovation Catalyst Grant in Regenerative Medicine, providing $50,000 in milestone-based funding.",
+      "body": "An interdisciplinary USC team representing Mann and Keck, <strong>Syed Ahmed, PhD</strong> and Albert Almada, PhD, has been selected for the <a href=\"https://stemcell.keck.usc.edu/2026-usc-stem-cell-spark-at-usc-innovation-catalyst-grant-in-regenerative-medicine/\" target=\"_blank\" rel=\"noopener noreferrer\">2026 Broad Center–SPARK at USC Innovation Catalyst Grant in Regenerative Medicine</a>, providing $50,000 in milestone-based funding for the first year, with the opportunity to reapply for an additional $50,000 for a second year of support (1+1 years). Ahmed and Almada will serve as co-principal investigators. Their funded proposal, \"First-in-Class PROTAC-Based Degradation of FOS for Duchenne Muscular Dystrophy: Development of Novel IP-Protected Compounds for Translational Advancement,\" aims to advance a novel therapeutic strategy for Duchenne muscular dystrophy (DMD).",
+      "images": []
+    },
+    {
       "title": "NIH R01 Grant Award — Discovery of Novel Small Molecules for Cancer Therapeutics",
       "date": "06/09/2022",
       "excerpt": "Syed Kaleem Ahmed, PhD is part of an interdisciplinary USC team awarded a three-year, $2 million NIH R01 grant for the project \"Discovery of Novel Small Molecules Targeting a Circadian Regulatory Complex for Cancer Therapeutics.\"",
