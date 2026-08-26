@@ -736,6 +736,20 @@
   transform:translateY(-3px);
   box-shadow:0 10px 22px rgba(15,34,54,0.14);
 }
+.post-card__gallery--multi{
+  grid-template-columns:repeat(2,1fr);
+}
+.post-card__gallery--multi img{
+  height:320px;
+  max-height:none;
+  object-fit:contain;
+  background:#f7f8fa;
+}
+@media (max-width:640px){
+  .post-card__gallery--multi{
+    grid-template-columns:1fr;
+  }
+}
 .post-card__body{
   font-family:"Inter",sans-serif;
   font-size:17px;

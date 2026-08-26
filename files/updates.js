@@ -2,9 +2,11 @@
   var DEFAULT_THUMB = 'media/update-default.png';
 
   function renderPost(post) {
-    var gallery = (post.images || []).length
-      ? '<div class="post-card__gallery">' +
-        post.images.map(function (src) {
+    var images = post.images || [];
+    var galleryClass = 'post-card__gallery' + (images.length > 1 ? ' post-card__gallery--multi' : '');
+    var gallery = images.length
+      ? '<div class="' + galleryClass + '">' +
+        images.map(function (src) {
           return '<img src="' + src + '" alt="Picture" />';
         }).join('') +
         '</div>'
