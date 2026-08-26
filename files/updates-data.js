@@ -8,6 +8,18 @@ var SITE_UPDATES = {
       "images": []
     },
     {
+      "title": "Best Flash Talk Award at USC Mann AAPS Student Chapter Event",
+      "date": "08/21/2026",
+      "excerpt": "Nader Mostowfi won the Best Flash Talk award at the USC Mann AAPS Student Chapter event, presenting his research on disassembling tau aggregates with a small molecule disaggregase to treat Alzheimer's disease. Congratulations, Nader!",
+      "body": "Congratulations to Nader Mostowfi for winning the <strong>Best Flash Talk</strong> award at the USC Mann AAPS Student Chapter event! Nader presented his research, \"Disassembling Tau Aggregates with a Small Molecule Disaggregase to Treat Alzheimer's Disease,\" showing that the lead analog PT-13 improves tau seeding inhibition through direct tau fibril disaggregation. Great work, Nader — a win for one lab member is a collective win for all of us.",
+      "images": [
+        "media/nader-aaps-flash-talk-slide.jpg",
+        "media/nader-aaps-poster.jpeg",
+        "media/nader-aaps-best-flash-talk-award.jpeg",
+        "media/nader-aaps-award-photo.jpeg"
+      ]
+    },
+    {
       "title": "NIH R01 Grant Award — Discovery of Novel Small Molecules for Cancer Therapeutics",
       "date": "06/09/2022",
       "excerpt": "Syed Kaleem Ahmed, PhD is part of an interdisciplinary USC team awarded a three-year, $2 million NIH R01 grant for the project \"Discovery of Novel Small Molecules Targeting a Circadian Regulatory Complex for Cancer Therapeutics.\"",
