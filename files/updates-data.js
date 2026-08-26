@@ -15,8 +15,7 @@ var SITE_UPDATES = {
       "images": [
         "media/nader-aaps-flash-talk-slide.jpg",
         "media/nader-aaps-poster.jpeg",
-        "media/nader-aaps-best-flash-talk-award.jpeg",
-        "media/nader-aaps-award-photo.jpeg"
+        "media/nader-aaps-best-flash-talk-award.jpeg"
       ]
     },
     {
