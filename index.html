@@ -18,153 +18,199 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="files/main_style.css?1782151360"
+      href="assets/css/main_style.css?1782151360"
       title="wsite-theme-css"
     />
-    <link rel="stylesheet" type="text/css" href="files/site-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/site-theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="files/theme-overrides.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/theme-overrides.css" />
     <script src="https://cdn11.editmysite.com/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/layout.js"></script>
   </head>
 
   <body class="header-page wsite-theme-light wsite-page-index">
     <div class="wrapper">
-      <div class="header-wrap">
-        <div class="nav-wrap">
-          <div id="logo">
-            <span class="wsite-logo">
-              <a href="index.html" class="site-logo-link">
-                <span id="wsite-title" class="site-logo-lockup"
-                  ><span class="site-logo-main"
-                    >The Ahmed <span class="site-logo-accent">Lab</span></span
-                  ><span class="site-logo-sub"
-                    >USC Alfred E. Mann School of Pharmacy and Pharmaceutical
-                    Sciences</span
-                  ></span
-                >
-              </a>
-            </span>
-          </div>
-          <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
-          <div class="menu">
-            <div class="container">
-              <div class="search"></div>
-              <ul class="wsite-menu-default">
-                <li id="active" class="wsite-menu-item-wrap">
-                  <a href="index.html" class="wsite-menu-item"> Home </a>
-                </li>
-                <li id="pg105554541409183497" class="wsite-menu-item-wrap">
-                  <a href="members.html" class="wsite-menu-item"> Members </a>
-                </li>
-                <li id="pg888503303817246873" class="wsite-menu-item-wrap">
-                  <a href="updates.html" class="wsite-menu-item"> Updates </a>
-                </li>
-                <li id="pg379524370358933241" class="wsite-menu-item-wrap">
-                  <a href="contact.html" class="wsite-menu-item"> Contact </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <header class="header-wrap">
+        <div id="site-nav-slot"></div>
+        <script>
+          SiteLayout.mount("site-nav-slot", SiteLayout.navWrap("home"));
+        </script>
 
         <div class="banner-wrap">
           <div class="wsite-elements wsite-not-footer wsite-header-elements">
             <div class="wsite-section-wrap">
-              <div
-                class="wsite-section wsite-header-section wsite-section-bg-image hero-slider"
-                style="height: 592px"
-              >
-                <div
-                  class="hero-slide hero-slide--active"
-                  style="
-                    background-image: url(media/backgrounds/1598464197.jpg);
-                    background-position: 50% 60%;
-                  "
-                ></div>
-                <div
-                  class="hero-slide"
-                  style="
-                    background-image: url(media/syed-research-group-mcc_orig.jpg);
-                    background-position: 50% 25%;
-                  "
-                ></div>
-                <div
-                  class="hero-slide"
-                  style="
-                    background-image: url(media/img-2231_orig.jpg);
-                    background-position: 40% 25%;
-                  "
-                ></div>
-                <div
-                  class="hero-slide"
-                  style="
-                    background-image: url(media/usc-adv-pharmacy-medchem-202306-21_orig.jpg);
-                    background-position: 65% 35%;
-                  "
-                ></div>
-                <div
-                  class="hero-slide"
-                  style="
-                    background-image: url(media/usc-adv-pharmacy-medchem-202306-31_orig.jpg);
-                    background-position: 50% 35%;
-                  "
-                ></div>
-                <div
-                  class="hero-slide"
-                  style="
-                    background-image: url(media/screenshot-2025-09-25-at-4-05-46-pm_orig.png);
-                    background-position: 50% 30%;
-                  "
-                ></div>
-                <div class="hero-overlay"></div>
+              <div class="wsite-section wsite-header-section hero-simple">
                 <div class="wsite-section-content">
                   <div class="container">
                     <div class="banner">
-                      <div class="wsite-section-elements hero-content">
-                        <span class="hero-content__eyebrow">USC Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences</span>
-                        <h1 class="hero-content__title">Engineering Tomorrow's <span class="hero-content__accent">Medicines</span></h1>
-                        <p class="hero-content__tagline">Medicinal chemistry and drug discovery research, from molecule to mechanism.</p>
-                        <div class="hero-content__actions">
-                          <a class="btn-site btn-site--accent" href="contact.html">Contact Us</a>
-                          <a class="btn-site btn-site--light" href="members.html">Meet the Team</a>
+                      <div class="wsite-section-elements hero-simple__inner">
+                        <span class="hero-simple__eyebrow"
+                          ><span class="hero-simple__eyebrow-text"
+                            >USC Alfred E. Mann School of Pharmacy and
+                            Pharmaceutical Sciences</span
+                          ></span
+                        >
+                        <h1 class="hero-simple__title">
+                          Medicinal chemistry and drug discovery research
+                        </h1>
+                        <p class="hero-simple__tagline">
+                          The Ahmed Lab studies small-molecule modulators of
+                          disease-relevant targets, from mechanism to
+                          therapeutic candidate.
+                        </p>
+                        <div class="hero-simple__actions">
+                          <a class="btn-site btn-site--accent" href="members.html"
+                            >Meet the team</a
+                          >
+                          <a class="btn-site btn-site--light" href="contact.html"
+                            >Contact us</a
+                          >
                         </div>
                       </div>
+                      <div class="hero-structure hero-structure--main" aria-hidden="true">
+                        <svg version='1.1' baseProfile='full'
+                              xmlns='http://www.w3.org/2000/svg'
+                                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                                  xml:space='preserve'
+                        width='900px' height='700px' viewBox='0 0 900 700'>
+                        <path class='bond-0 atom-0 atom-1' d='M 834.3,497.3 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-1 atom-1 atom-2' d='M 729.7,366.9 L 773.8,205.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 773.8,205.6 L 634.1,113.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 744.8,216.6 L 635.5,144.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-3 atom-3 atom-4' d='M 634.1,113.8 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 503.6,218.4 L 562.7,374.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 533.5,226.6 L 579.7,348.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-5 atom-5 atom-6' d='M 562.7,374.8 L 456.9,504.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 442.6,501.8 L 504.3,665.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 466.0,493.0 L 527.7,656.1' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-7 atom-6 atom-8' d='M 456.9,504.2 L 291.9,477.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-8 atom-8 atom-9' d='M 291.9,477.2 L 186.0,606.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-9 atom-8 atom-10' d='M 291.9,477.2 L 232.7,320.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 241.9,309.6 L 69.7,281.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 237.8,334.3 L 65.7,306.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-11 atom-10 atom-12' d='M 232.7,320.8 L 338.6,191.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-12 atom-12 atom-13' d='M 338.6,191.4 L 279.5,35.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-13 atom-5 atom-1' d='M 562.7,374.8 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-14 atom-12 atom-4' d='M 338.6,191.4 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path d='M 771.6,213.7 L 773.8,205.6 L 766.8,201.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 641.1,118.4 L 634.1,113.8 L 627.5,119.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 462.2,497.7 L 456.9,504.2 L 448.6,502.8' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 235.7,328.6 L 232.7,320.8 L 238.0,314.3' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        </svg>
+                      </div>
+                      <div class="hero-structure hero-structure--ghost-a" aria-hidden="true">
+                        <svg version='1.1' baseProfile='full'
+                              xmlns='http://www.w3.org/2000/svg'
+                                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                                  xml:space='preserve'
+                        width='900px' height='700px' viewBox='0 0 900 700'>
+                        <path class='bond-0 atom-0 atom-1' d='M 834.3,497.3 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-1 atom-1 atom-2' d='M 729.7,366.9 L 773.8,205.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 773.8,205.6 L 634.1,113.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 744.8,216.6 L 635.5,144.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-3 atom-3 atom-4' d='M 634.1,113.8 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 503.6,218.4 L 562.7,374.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 533.5,226.6 L 579.7,348.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-5 atom-5 atom-6' d='M 562.7,374.8 L 456.9,504.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 442.6,501.8 L 504.3,665.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 466.0,493.0 L 527.7,656.1' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-7 atom-6 atom-8' d='M 456.9,504.2 L 291.9,477.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-8 atom-8 atom-9' d='M 291.9,477.2 L 186.0,606.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-9 atom-8 atom-10' d='M 291.9,477.2 L 232.7,320.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 241.9,309.6 L 69.7,281.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 237.8,334.3 L 65.7,306.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-11 atom-10 atom-12' d='M 232.7,320.8 L 338.6,191.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-12 atom-12 atom-13' d='M 338.6,191.4 L 279.5,35.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-13 atom-5 atom-1' d='M 562.7,374.8 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-14 atom-12 atom-4' d='M 338.6,191.4 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path d='M 771.6,213.7 L 773.8,205.6 L 766.8,201.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 641.1,118.4 L 634.1,113.8 L 627.5,119.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 462.2,497.7 L 456.9,504.2 L 448.6,502.8' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 235.7,328.6 L 232.7,320.8 L 238.0,314.3' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        </svg>
+                      </div>
+                      <div class="hero-structure hero-structure--ghost-b" aria-hidden="true">
+                        <svg version='1.1' baseProfile='full'
+                              xmlns='http://www.w3.org/2000/svg'
+                                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                                  xml:space='preserve'
+                        width='900px' height='700px' viewBox='0 0 900 700'>
+                        <path class='bond-0 atom-0 atom-1' d='M 834.3,497.3 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-1 atom-1 atom-2' d='M 729.7,366.9 L 773.8,205.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 773.8,205.6 L 634.1,113.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 744.8,216.6 L 635.5,144.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-3 atom-3 atom-4' d='M 634.1,113.8 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 503.6,218.4 L 562.7,374.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 533.5,226.6 L 579.7,348.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-5 atom-5 atom-6' d='M 562.7,374.8 L 456.9,504.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 442.6,501.8 L 504.3,665.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 466.0,493.0 L 527.7,656.1' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-7 atom-6 atom-8' d='M 456.9,504.2 L 291.9,477.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-8 atom-8 atom-9' d='M 291.9,477.2 L 186.0,606.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-9 atom-8 atom-10' d='M 291.9,477.2 L 232.7,320.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 241.9,309.6 L 69.7,281.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 237.8,334.3 L 65.7,306.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-11 atom-10 atom-12' d='M 232.7,320.8 L 338.6,191.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-12 atom-12 atom-13' d='M 338.6,191.4 L 279.5,35.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-13 atom-5 atom-1' d='M 562.7,374.8 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-14 atom-12 atom-4' d='M 338.6,191.4 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path d='M 771.6,213.7 L 773.8,205.6 L 766.8,201.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 641.1,118.4 L 634.1,113.8 L 627.5,119.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 462.2,497.7 L 456.9,504.2 L 448.6,502.8' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 235.7,328.6 L 232.7,320.8 L 238.0,314.3' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        </svg>
+                      </div>
+                      <div class="hero-structure hero-structure--ghost-c" aria-hidden="true">
+                        <svg version='1.1' baseProfile='full'
+                              xmlns='http://www.w3.org/2000/svg'
+                                      xmlns:xlink='http://www.w3.org/1999/xlink'
+                                  xml:space='preserve'
+                        width='900px' height='700px' viewBox='0 0 900 700'>
+                        <path class='bond-0 atom-0 atom-1' d='M 834.3,497.3 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-1 atom-1 atom-2' d='M 729.7,366.9 L 773.8,205.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 773.8,205.6 L 634.1,113.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-2 atom-2 atom-3' d='M 744.8,216.6 L 635.5,144.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-3 atom-3 atom-4' d='M 634.1,113.8 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 503.6,218.4 L 562.7,374.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-4 atom-4 atom-5' d='M 533.5,226.6 L 579.7,348.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-5 atom-5 atom-6' d='M 562.7,374.8 L 456.9,504.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 442.6,501.8 L 504.3,665.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-6 atom-6 atom-7' d='M 466.0,493.0 L 527.7,656.1' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-7 atom-6 atom-8' d='M 456.9,504.2 L 291.9,477.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-8 atom-8 atom-9' d='M 291.9,477.2 L 186.0,606.6' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-9 atom-8 atom-10' d='M 291.9,477.2 L 232.7,320.8' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 241.9,309.6 L 69.7,281.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-10 atom-10 atom-11' d='M 237.8,334.3 L 65.7,306.2' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-11 atom-10 atom-12' d='M 232.7,320.8 L 338.6,191.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-12 atom-12 atom-13' d='M 338.6,191.4 L 279.5,35.0' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-13 atom-5 atom-1' d='M 562.7,374.8 L 729.7,366.9' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path class='bond-14 atom-12 atom-4' d='M 338.6,191.4 L 503.6,218.4' style='fill:none;fill-rule:evenodd;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1' />
+                        <path d='M 771.6,213.7 L 773.8,205.6 L 766.8,201.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 641.1,118.4 L 634.1,113.8 L 627.5,119.0' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 462.2,497.7 L 456.9,504.2 L 448.6,502.8' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        <path d='M 235.7,328.6 L 232.7,320.8 L 238.0,314.3' style='fill:none;stroke:var(--structure-stroke, var(--color-accent));stroke-width:1.6px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;' />
+                        </svg>
+                      </div>
+                      <div class="hero-scrim" aria-hidden="true"></div>
                     </div>
                   </div>
                 </div>
-                <div class=""></div>
               </div>
             </div>
           </div>
-
-          <script>
-            (function () {
-              var slides = document.querySelectorAll(
-                ".hero-slider .hero-slide",
-              );
-              if (slides.length < 2) return;
-              var current = 0;
-              setInterval(function () {
-                slides[current].classList.remove("hero-slide--active");
-                current = (current + 1) % slides.length;
-                slides[current].classList.add("hero-slide--active");
-              }, 5000);
-            })();
-          </script>
         </div>
-      </div>
-      <!--/.header-wrap-->
+      </header>
 
-      <div id="main-wrap">
+      <main id="main-wrap">
         <div id="wsite-content" class="wsite-elements wsite-not-footer">
           <div class="wsite-section-wrap">
             <div
-              class="wsite-section wsite-body-section wsite-background-7 wsite-custom-background"
+              class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
             >
               <div class="wsite-section-content">
                 <div class="wsite-section-elements site-section">
@@ -177,12 +223,51 @@
                       <span class="site-heading__accent">Medicines</span>
                     </h2>
                     <div class="site-rule"></div>
-                    <p class="site-tagline" style="margin-bottom: 48px">
+                    <p class="site-tagline">
                       Designing the next generation of small-molecule
                       therapeutics, one bond at a time.
                     </p>
 
-                    <div class="intro-grid">
+                    <div class="focus-grid">
+                      <div class="focus-card">
+                        <div class="focus-card__icon">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8.5V2" /><path d="M8.5 2h7" /><path d="M7 16h10" /></svg>
+                        </div>
+                        <h3 class="focus-card__title">Structure &amp; Ligand-Based Design</h3>
+                        <p class="focus-card__desc">
+                          Designing small molecules guided by target structure
+                          and ligand-based drug development.
+                        </p>
+                      </div>
+                      <div class="focus-card">
+                        <div class="focus-card__icon">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 1.5.7 2.4 1.5 3.3C9.3 11 10 12 10 13.5V22h4v-8.5c0-1.5.7-2.5 1.5-3.2.8-.9 1.5-1.8 1.5-3.3a5 5 0 0 0-5-5z" /></svg>
+                        </div>
+                        <h3 class="focus-card__title">Heterocyclic &amp; Bioorthogonal Chemistry</h3>
+                        <p class="focus-card__desc">
+                          Developing new synthetic methodologies in
+                          heterocyclic and bioorthogonal chemistry.
+                        </p>
+                      </div>
+                      <div class="focus-card">
+                        <div class="focus-card__icon">
+                          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>
+                        </div>
+                        <h3 class="focus-card__title">Small-Molecule Modulators</h3>
+                        <p class="focus-card__desc">
+                          Mechanistic study of small-molecule modulators
+                          across a diverse range of therapeutic targets.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="intro-grid" style="margin-top: var(--space-lg)">
+                      <div class="intro-grid__image">
+                        <img
+                          src="assets/images/gallery/research-overview.png"
+                          alt="Picture"
+                        />
+                      </div>
                       <div class="intro-grid__text">
                         Our research interests include bioorganic and medicinal
                         chemistry, structure/ligand-based drug design and
@@ -193,9 +278,6 @@
                         <div style="margin-top: 32px">
                           <a class="btn-site" href="contact.html">Contact us</a>
                         </div>
-                      </div>
-                      <div class="intro-grid__image">
-                        <img src="media/picture2_orig.png" alt="Picture" />
                       </div>
                     </div>
                   </div>
@@ -208,7 +290,9 @@
               class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
             >
               <div class="wsite-section-content">
-                <div class="wsite-section-elements site-section">
+                <div
+                  class="wsite-section-elements site-section site-section--alt"
+                >
                   <div class="site-container">
                     <h2 class="site-heading">
                       Fresh From The
@@ -226,9 +310,7 @@
                     ></div>
 
                     <div class="updates-preview__footer">
-                      <a class="btn-site" href="updates.html"
-                        >View All Updates</a
-                      >
+                      <a class="btn-site" href="updates.html">View All Updates</a>
                     </div>
                   </div>
                 </div>
@@ -240,9 +322,7 @@
               class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
             >
               <div class="wsite-section-content">
-                <div
-                  class="wsite-section-elements site-section site-section--alt"
-                >
+                <div class="wsite-section-elements site-section">
                   <div class="site-container">
                     <h2 class="site-heading">
                       Behind The <span class="site-heading__accent">Bench</span>
@@ -256,35 +336,40 @@
                     <div class="gallery-grid">
                       <div class="gallery-grid__feature">
                         <img
-                          src="media/syed-research-group-mcc_orig.jpg"
+                          src="assets/images/gallery/lab-group-photo.jpg"
                           alt="Picture"
                         />
                       </div>
-                      <img src="media/image003_orig.jpg" alt="Picture" />
-                      <img src="media/img-2231_orig.jpg" alt="Picture" />
-                      <img
-                        src="media/usc-adv-pharmacy-medchem-202306-21_orig.jpg"
-                        alt="Picture"
-                      />
-                      <img
-                        src="media/usc-adv-pharmacy-medchem-202306-31_orig.jpg"
-                        alt="Picture"
-                      />
-                      <img src="media/img-2227-1_orig.jpg" alt="Picture" />
-                      <img
-                        src="media/usc-adv-pharmacy-medchem-202306-10_orig.jpg"
-                        alt="Picture"
-                      />
-                      <img src="media/image005_orig.jpg" alt="Picture" />
-                      <img src="media/image004_orig.jpg" alt="Picture" />
-                      <img
-                        src="media/usc-adv-pharmacy-medchem-202306-35-1-min_orig.jpg"
-                        alt="Picture"
-                      />
-                      <img
-                        src="media/screenshot-2025-09-25-at-4-05-46-pm_orig.png"
-                        alt="Picture"
-                      />
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-01.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-02.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-03.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-04.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-05.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-06.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-07.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-08.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-09.jpg" alt="Picture" />
+                      </div>
+                      <div class="gallery-grid__tile">
+                        <img src="assets/images/gallery/gallery-10.png" alt="Picture" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -292,21 +377,22 @@
             </div>
           </div>
           <div class="wsite-section-wrap">
-            <div class="wsite-section wsite-body-section site-footer">
+            <div
+              class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
+            >
               <div class="wsite-section-content">
-                <div class="wsite-section-elements">
+                <div class="wsite-section-elements" style="padding: 24px 0 90px">
                   <div class="site-container">
-                    <div class="site-footer__row">
-                      <span class="site-footer__brand">The Ahmed Lab</span>
-                      <nav class="site-footer__nav">
-                        <a href="index.html">Home</a>
-                        <a href="updates.html">Updates</a>
-                        <a href="contact.html">Contact</a>
-                      </nav>
-                    </div>
-
-                    <div class="site-footer__copyright">
-                      &copy; 2024 University of Southern California HSC
+                    <div class="cta-band">
+                      <h2 class="cta-band__title">Interested in Joining the Lab?</h2>
+                      <p class="cta-band__text">
+                        We're always looking to hear from motivated students
+                        and researchers interested in medicinal chemistry and
+                        drug discovery.
+                      </p>
+                      <a class="btn-site btn-site--light" href="contact.html"
+                        >Get in Touch</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -314,36 +400,65 @@
             </div>
           </div>
         </div>
+      </main>
+
+      <div
+        id="gallery-lightbox"
+        class="lightbox"
+        hidden
+        role="dialog"
+        aria-modal="true"
+        aria-label="Photo viewer"
+      >
+        <div class="lightbox__overlay" data-lightbox-close></div>
+        <button
+          type="button"
+          class="lightbox__nav lightbox__nav--prev"
+          data-lightbox-prev
+          aria-label="Previous photo"
+        >
+          &#8249;
+        </button>
+        <div class="lightbox__stage">
+          <img class="lightbox__image" id="lightbox-image" src="" alt="" />
+        </div>
+        <button
+          type="button"
+          class="lightbox__nav lightbox__nav--next"
+          data-lightbox-next
+          aria-label="Next photo"
+        >
+          &#8250;
+        </button>
+        <button
+          type="button"
+          class="lightbox__close"
+          data-lightbox-close
+          aria-label="Close"
+        >
+          &times;
+        </button>
       </div>
+
+      <div id="site-footer-slot"></div>
+      <script>
+        SiteLayout.mount("site-footer-slot", SiteLayout.footer());
+      </script>
 
       <div class="sticky-footer-push"></div>
     </div>
     <!--/.wrapper-->
 
-    <div class="navmobile-wrapper">
-      <div id="navmobile" class="nav">
-        <ul class="wsite-menu-default">
-          <li id="active" class="wsite-menu-item-wrap">
-            <a href="index.html" class="wsite-menu-item"> Home </a>
-          </li>
-          <li id="pg105554541409183497" class="wsite-menu-item-wrap">
-            <a href="members.html" class="wsite-menu-item"> Members </a>
-          </li>
-          <li id="pg888503303817246873" class="wsite-menu-item-wrap">
-            <a href="updates.html" class="wsite-menu-item"> Updates </a>
-          </li>
-          <li id="pg379524370358933241" class="wsite-menu-item-wrap">
-            <a href="contact.html" class="wsite-menu-item"> Contact </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div id="site-navmobile-slot"></div>
+    <script>
+      SiteLayout.mount("site-navmobile-slot", SiteLayout.navMobile("home"));
+    </script>
 
-    <script type="text/javascript" src="files/theme/files/mobile.js"></script>
-    <script type="text/javascript" src="files/theme/files/plugins.js"></script>
-    <script type="text/javascript" src="files/theme/files/custom.js"></script>
-    <script type="text/javascript" src="files/updates-data.js"></script>
-    <script type="text/javascript" src="files/updates.js"></script>
-
+    <script type="text/javascript" src="assets/vendor/theme/mobile.js"></script>
+    <script type="text/javascript" src="assets/vendor/theme/plugins.js"></script>
+    <script type="text/javascript" src="assets/vendor/theme/custom.js"></script>
+    <script type="text/javascript" src="assets/data/updates-data.js"></script>
+    <script type="text/javascript" src="assets/js/updates.js"></script>
+    <script type="text/javascript" src="assets/js/gallery.js"></script>
   </body>
 </html>

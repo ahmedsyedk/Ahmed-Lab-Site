@@ -10,6 +10,9 @@ Thumbs.db
 # Logs
 *.log
 
+# Local tooling scratch output
+.playwright-mcp/
+
 # Env / secrets
 .env
 .env.*

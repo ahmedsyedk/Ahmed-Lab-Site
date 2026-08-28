@@ -15,8 +15,8 @@ The "Members" page and the "Updates" page are both powered by two simple text fi
 
 | To change... | Edit this file |
 |---|---|
-| Lab members (current or former) | `files/members-data.js` |
-| News / updates posts | `files/updates-data.js` |
+| Lab members (current or former) | `assets/data/members-data.js` |
+| News / updates posts | `assets/data/updates-data.js` |
 
 Open either file in any plain text editor (e.g. **TextEdit** on Mac in plain-text mode, **Notepad** on Windows, or VS Code). Do **not** open or edit them in Microsoft Word — Word will corrupt the file by adding formatting.
 
@@ -29,13 +29,13 @@ Open either file in any plain text editor (e.g. **TextEdit** on Mac in plain-tex
 
 ### Adding or editing a lab member
 
-Open `files/members-data.js`. You'll see two lists: `"current"` (current lab members) and `"former"` (former lab members). Each member looks like this:
+Open `assets/data/members-data.js`. You'll see two lists: `"current"` (current lab members) and `"former"` (former lab members). Each member looks like this:
 
 ```js
 {
   "name": "JANE DOE",
   "role": "PHD STUDENT, USC MANN",
-  "photo": "media/jane-doe.jpg",
+  "photo": "assets/images/people/jane-doe.jpg",
   "bio": "I joined the lab in 2024 to study small-molecule drug design. Before USC, I completed my degree at..."
 }
 ```
@@ -55,28 +55,30 @@ Open `files/members-data.js`. You'll see two lists: `"current"` (current lab mem
 
 #### Adding a photo
 
-1. Add the photo file to the `media/` folder (e.g. `media/jane-doe.jpg`). Use a reasonably sized JPG or PNG (a few hundred KB to ~2MB is plenty — don't upload a 20MB raw camera file).
-2. In `members-data.js`, set `"photo": "media/jane-doe.jpg"` (matching the exact filename, including capitalization).
+1. Add the photo file to the `assets/images/people/` folder (e.g. `assets/images/people/jane-doe.jpg`). Use a reasonably sized JPG or PNG (a few hundred KB to ~2MB is plenty — don't upload a 20MB raw camera file).
+2. In `members-data.js`, set `"photo": "assets/images/people/jane-doe.jpg"` (matching the exact filename, including capitalization).
 
 ### Adding or editing an Updates post
 
-Open `files/updates-data.js`. You'll see a single list called `"posts"`. **The most recent post should be listed first** — newer entries go at the top. Each post looks like this:
+Open `assets/data/updates-data.js`. You'll see a single list called `"posts"`. **The most recent post should be listed first** — newer entries go at the top. Each post looks like this:
 
 ```js
 {
   "title": "Poster presentation award at Moving Targets conference",
   "date": "08/22/2024",
+  "category": "Award",
   "excerpt": "Nader Mostowfi was announced as one of the winners of the Young Investigators Award...",
   "body": "At the Moving Targets Conference on Thursday Aug. 22 on USC Health Science Campus, Nader Mostowfi is announced as one of the winners...",
   "images": [
-    "media/photo-one.jpeg",
-    "media/photo-two.jpeg"
+    "assets/images/updates/photo-one.jpeg",
+    "assets/images/updates/photo-two.jpeg"
   ]
 }
 ```
 
 - **`title`** — the headline of the post.
-- **`date`** — shown under the title, in `MM/DD/YYYY` format.
+- **`date`** — shown under the title, in `MM/DD/YYYY` format. Also used to group posts by year and for the "Filter by Year" sidebar on the Updates page.
+- **`category`** — a short label shown as a colored pill next to the date. Use one of `"Grant"`, `"Award"`, or `"Publication"` (each has its own color in `site-theme.css`); any other value still renders as a plain gray pill. Optional — leave it out and no pill shows.
 - **`excerpt`** — a short 1–2 sentence summary. This is what shows in the small preview card on the home page, so keep it brief and punchy.
 - **`body`** — the full text shown on the Updates page. Can be as long as you like.
 - **`images`** — a list of photo filenames for this post (see [Adding a photo](#adding-a-photo) above — same idea). If the post has no photos, leave it as `"images": []`.
@@ -86,7 +88,7 @@ Open `files/updates-data.js`. You'll see a single list called `"posts"`. **The m
 ```js
 "link": {
   "label": "View Publication (PDF)",
-  "url": "media/my-paper.pdf"
+  "url": "assets/docs/my-paper.pdf"
 }
 ```
 
@@ -116,15 +118,24 @@ This site is hosted on GitHub Pages and automatically redeploys whenever changes
 - `members.html` — Lab members
 - `updates.html` — News/updates
 - `contact.html` — Contact page
-- `media/` — Images, photos, and PDFs referenced by the pages
-- `files/` — Stylesheets, scripts, and theme assets:
-  - `main_style.css` — original Weebly/EditMySite theme styles (avoid editing directly)
-  - `site-theme.css` — custom design system (typography, layout, components) layered on top of the theme
-  - `theme-overrides.css` — targeted overrides of legacy theme rules
-  - `members-data.js` / `updates-data.js` — the editable content described above, loaded as plain JS globals (`SITE_MEMBERS`, `SITE_UPDATES`) rather than fetched JSON, so the site also works when opened directly via `file://` without a web server
-  - `members.js` / `updates.js` — render the data above into the DOM on `members.html`, `updates.html`, and the homepage's "Latest Updates" preview
-  - `theme/` — original theme assets (mobile menu JS, plugin JS, images)
-- `apps/` — Misc embedded assets (e.g. Flash audio player)
+- `favicon.svg` — Browser tab icon
+- `assets/` — Everything the pages load:
+  - `css/`
+    - `main_style.css` — original Weebly/EditMySite theme styles (avoid editing directly)
+    - `site-theme.css` — custom design system (typography, layout, components) layered on top of the theme
+    - `theme-overrides.css` — targeted overrides of legacy theme rules
+  - `js/`
+    - `layout.js` — single source of truth for the header nav, mobile nav, and footer markup, shared by all four pages (see [Shared header/nav/footer](#shared-headernavfooter) below)
+    - `members.js` / `updates.js` — render the content data into the DOM on `members.html`, `updates.html`, and the homepage's "Latest Updates" preview
+  - `data/`
+    - `members-data.js` / `updates-data.js` — the editable content described above, loaded as plain JS globals (`SITE_MEMBERS`, `SITE_UPDATES`) rather than fetched JSON, so the site also works when opened directly via `file://` without a web server
+  - `images/`
+    - `people/` — lab member photos
+    - `gallery/` — "Behind the Bench" homepage gallery photos
+    - `updates/` — photos attached to Updates posts
+    - `ui/` — small site-chrome graphics (decorative flourish, default avatar placeholder)
+  - `docs/` — PDFs linked from Updates posts (e.g. publications)
+  - `vendor/theme/` — original Weebly theme assets (mobile menu JS, plugin JS, theme images) — third-party code, not hand-edited
 - `.github/workflows/static.yml` — GitHub Actions workflow that deploys the site to GitHub Pages on every push to `main`
 
 ### Running locally
@@ -137,7 +148,21 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
+### Shared header/nav/footer
+
+The logo, top nav, mobile nav, and footer are identical on every page, so they're defined once in `assets/js/layout.js` (a plain global, `SiteLayout`, with no build step or fetch involved) instead of being copy-pasted into each `.html` file. Each page just marks where each piece goes and which nav item should be active:
+
+```html
+<header class="header-wrap">
+  <div id="site-nav-slot"></div>
+  <script>SiteLayout.mount("site-nav-slot", SiteLayout.navWrap("members"));</script>
+</header>
+```
+
+`SiteLayout.mount` synchronously replaces the placeholder `<div>` with the real markup, before the browser paints it, so there's no flash of an empty header. The active-page keys are `"home"`, `"members"`, `"updates"`, `"contact"`.
+
+**If you add a new page**, add it to the `PAGES` list at the top of `assets/js/layout.js` and it will automatically show up in the nav (desktop and mobile) on every page — you don't need to touch the other HTML files.
+
 ### Notes for future edits
 
-- Keep all internal asset paths (in CSS, HTML, and JS) **relative**, not absolute (`media/...`, not `/media/...`) — absolute paths break when the site is opened via `file://` without a server. Note that stylesheets inside `files/` need `../media/...` since `url()` paths in CSS resolve relative to the stylesheet's own location, not the site root.
-- `files/templateArtifacts.js` is referenced in every page's `<head>` but intentionally does not exist locally — it's a Weebly editor-only script with no effect on the published site, and 404s harmlessly.
+- Keep all internal asset paths (in CSS, HTML, and JS) **relative**, not absolute (`assets/...`, not `/assets/...`) — absolute paths break when the site is opened via `file://` without a server. Note that stylesheets inside `assets/css/` need `../images/...` (not `images/...`) since `url()` paths in CSS resolve relative to the stylesheet's own location, not the site root.
