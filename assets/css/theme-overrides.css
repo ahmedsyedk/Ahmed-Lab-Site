@@ -62,8 +62,8 @@
 #wsite-content .product-large .product-title,
 #wsite-content .product-small .product-title,
 .blog-sidebar h2 {
-  text-transform: uppercase !important;
-  letter-spacing: 2px !important;
+  text-transform: none !important;
+  letter-spacing: -0.2px !important;
 }
 #wsite-content h2,
 #wsite-content .product-long .product-title,
@@ -110,8 +110,8 @@
 .wsite-headline,
 .wsite-header-section .wsite-content-title {
   font-family: "Inter", sans-serif !important;
-  font-weight: 700 !important;
-  letter-spacing: 1px !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.3px !important;
 }
 .wsite-headline-paragraph,
 .wsite-header-section .paragraph {
@@ -195,7 +195,7 @@
   #wsite-content .product-large .product-title,
   #wsite-content .product-small .product-title,
   .blog-sidebar h2 {
-    font-size: 35px !important;
+    font-size: 36px !important;
     line-height: 44px !important;
   }
   #wsite-content h2,
@@ -231,7 +231,7 @@
   }
   .wsite-headline,
   .wsite-header-section .wsite-content-title {
-    font-size: 70px !important;
+    font-size: 64px !important;
   }
   .wsite-headline-paragraph,
   .wsite-header-section .paragraph {
@@ -250,14 +250,8 @@
   }
 }
 .wsite-background {
-  background-image: url("../media/backgrounds/site-bg-academic.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: top center !important;
-  background-size: cover !important;
-  background-color: #eef6ff !important;
-}
-body.wsite-background {
-  background-attachment: fixed !important;
+  background-image: none !important;
+  background-color: #fbfbf9 !important;
 }
 .wsite-background.wsite-custom-background {
   background-size: cover !important;
@@ -266,12 +260,8 @@ body.wsite-background {
 /* ---- Palette refresh: align legacy theme chrome (mobile slide-out menu,
    body backdrop) with the navy/gold design system in site-theme.css ---- */
 body {
-  background-color: #eef6ff !important;
-  background-image: url("../media/backgrounds/site-bg-academic.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: top center !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
+  background-color: #fbfbf9 !important;
+  background-image: none !important;
 }
 .wrapper,
 #main-wrap {
@@ -282,13 +272,9 @@ body {
 }
 .header-wrap .nav-wrap,
 .no-header-page .header-wrap .nav-wrap {
-  background-color: #eef6ff !important;
-  background-image: url("../media/backgrounds/site-bg-academic.png") !important;
-  background-repeat: no-repeat !important;
-  background-position: top center !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  border-bottom: 1px solid rgba(15, 34, 54, 0.08) !important;
+  background-color: #ffffff !important;
+  background-image: none !important;
+  border-bottom: 1px solid rgba(35, 10, 12, 0.08) !important;
 }
 .navmobile-wrapper {
   background: var(--color-dark) !important;

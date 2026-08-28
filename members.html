@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-      Members - USC ALFRED E. MANN SCHOOL OF PHARMACY AND PHARMACEUTICAL
+      Team - USC ALFRED E. MANN SCHOOL OF PHARMACY AND PHARMACEUTICAL
       SCIENCES
     </title>
 
@@ -19,64 +19,32 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="files/main_style.css?1782151360"
+      href="assets/css/main_style.css?1782151360"
       title="wsite-theme-css"
     />
-    <link rel="stylesheet" type="text/css" href="files/site-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/site-theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="files/theme-overrides.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/theme-overrides.css" />
     <script src="https://cdn11.editmysite.com/js/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/layout.js"></script>
   </head>
   <body class="header-page wsite-theme-light wsite-page-members">
     <div class="wrapper">
-      <div class="header-wrap">
-        <div class="nav-wrap">
-          <div id="logo">
-            <span class="wsite-logo">
-              <a href="index.html" class="site-logo-link">
-                <span id="wsite-title" class="site-logo-lockup"
-                  ><span class="site-logo-main"
-                    >The Ahmed <span class="site-logo-accent">Lab</span></span
-                  ><span class="site-logo-sub"
-                    >Alfred E. Mann School of Pharmacy and Pharmaceutical
-                    Sciences</span
-                  ></span
-                >
-              </a>
-            </span>
-          </div>
-          <a class="hamburger" aria-label="Menu" href="#"><span></span></a>
-          <div class="menu">
-            <div class="container">
-              <div class="search"></div>
-              <ul class="wsite-menu-default">
-                <li id="pg351838238670409242" class="wsite-menu-item-wrap">
-                  <a href="index.html" class="wsite-menu-item"> Home </a>
-                </li>
-                <li id="active" class="wsite-menu-item-wrap">
-                  <a href="members.html" class="wsite-menu-item"> Members </a>
-                </li>
-                <li id="pg888503303817246873" class="wsite-menu-item-wrap">
-                  <a href="updates.html" class="wsite-menu-item"> Updates </a>
-                </li>
-                <li id="pg379524370358933241" class="wsite-menu-item-wrap">
-                  <a href="contact.html" class="wsite-menu-item"> Contact </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.header-wrap-->
+      <header class="header-wrap">
+        <div id="site-nav-slot"></div>
+        <script>
+          SiteLayout.mount("site-nav-slot", SiteLayout.navWrap("members"));
+        </script>
+      </header>
 
       <div class="wsite-elements wsite-not-footer">
         <div class="wsite-section-wrap">
-          <div class="wsite-section wsite-body-section site-block">
+          <div class="wsite-section wsite-body-section site-block page-header">
             <div class="wsite-section-content">
               <div
                 class="wsite-section-elements site-section site-section--intro"
@@ -99,91 +67,91 @@
         </div>
       </div>
 
-      <div id="main-wrap">
+      <main id="main-wrap">
         <div id="wsite-content" class="wsite-elements wsite-not-footer">
           <div class="wsite-section-wrap">
             <div
               class="wsite-section wsite-body-section wsite-background-12 wsite-custom-background"
-              style="height: 4577px"
             >
               <div class="wsite-section-content">
                 <div class="container">
                   <div class="wsite-section-elements">
-                    <h2 class="wsite-content-title" style="text-align: center">
-                      <strong>Current Lab Members</strong>
-                    </h2>
+                    <div id="pi-card"></div>
 
                     <div class="wsite-spacer" style="height: 50px"></div>
 
-                    <div id="current-members"></div>
+                    <div class="filter-pills" role="tablist" aria-label="Filter the team">
+                      <button type="button" class="filter-pill is-active" data-member-filter="all">All</button>
+                      <button type="button" class="filter-pill" data-member-filter="current">Current</button>
+                      <button type="button" class="filter-pill" data-member-filter="former">Alumni</button>
+                    </div>
+
+                    <div data-member-group="current">
+                      <h2 class="member-group-heading">Current Team</h2>
+                      <div id="current-members"></div>
+                    </div>
 
                     <div class="wsite-spacer" style="height: 30px"></div>
 
-                    <h2 class="wsite-content-title" style="text-align: center">
-                      <strong>former Lab Members</strong>
-                    </h2>
-
-                    <div class="wsite-spacer" style="height: 50px"></div>
-
-                    <div id="former-members"></div>
+                    <div data-member-group="former">
+                      <h2 class="member-group-heading">Alumni</h2>
+                      <div id="former-members"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
-      <div class="wsite-section-wrap">
-        <div class="wsite-section wsite-body-section site-footer">
-          <div class="wsite-section-content">
-            <div class="wsite-section-elements">
-              <div class="site-container">
-                <div class="site-footer__row">
-                  <span class="site-footer__brand">The Ahmed Lab</span>
-                  <nav class="site-footer__nav">
-                    <a href="index.html">Home</a>
-                    <a href="updates.html">Updates</a>
-                    <a href="contact.html">Contact</a>
-                  </nav>
-                </div>
-                <div class="site-footer__copyright">
-                  &copy; 2024 University of Southern California HSC
-                </div>
-              </div>
+      <div
+        id="member-modal"
+        class="member-modal"
+        hidden
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="member-modal-name"
+      >
+        <div class="member-modal__overlay" data-modal-close></div>
+        <div class="member-modal__panel">
+          <button
+            type="button"
+            class="member-modal__close"
+            data-modal-close
+            aria-label="Close"
+          >
+            &times;
+          </button>
+          <div class="member-modal__header">
+            <img class="member-modal__photo" id="member-modal-photo" src="" alt="" />
+            <div>
+              <span class="member-modal__name" id="member-modal-name"></span>
+              <span class="member-modal__role" id="member-modal-role"></span>
             </div>
           </div>
+          <div class="member-modal__bio" id="member-modal-bio"></div>
         </div>
       </div>
+
+      <div id="site-footer-slot"></div>
+      <script>
+        SiteLayout.mount("site-footer-slot", SiteLayout.footer());
+      </script>
 
       <div class="sticky-footer-push"></div>
     </div>
     <!--/.wrapper-->
 
-    <div class="navmobile-wrapper">
-      <div id="navmobile" class="nav">
-        <ul class="wsite-menu-default">
-          <li id="pg351838238670409242" class="wsite-menu-item-wrap">
-            <a href="index.html" class="wsite-menu-item"> Home </a>
-          </li>
-          <li id="active" class="wsite-menu-item-wrap">
-            <a href="members.html" class="wsite-menu-item"> Members </a>
-          </li>
-          <li id="pg888503303817246873" class="wsite-menu-item-wrap">
-            <a href="updates.html" class="wsite-menu-item"> Updates </a>
-          </li>
-          <li id="pg379524370358933241" class="wsite-menu-item-wrap">
-            <a href="contact.html" class="wsite-menu-item"> Contact </a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div id="site-navmobile-slot"></div>
+    <script>
+      SiteLayout.mount("site-navmobile-slot", SiteLayout.navMobile("members"));
+    </script>
 
-    <script type="text/javascript" src="files/theme/files/mobile.js"></script>
-    <script type="text/javascript" src="files/theme/files/plugins.js"></script>
-    <script type="text/javascript" src="files/theme/files/custom.js"></script>
-    <script type="text/javascript" src="files/members-data.js"></script>
-    <script type="text/javascript" src="files/members.js"></script>
-
+    <script type="text/javascript" src="assets/vendor/theme/mobile.js"></script>
+    <script type="text/javascript" src="assets/vendor/theme/plugins.js"></script>
+    <script type="text/javascript" src="assets/vendor/theme/custom.js"></script>
+    <script type="text/javascript" src="assets/data/members-data.js"></script>
+    <script type="text/javascript" src="assets/js/members.js"></script>
   </body>
 </html>
