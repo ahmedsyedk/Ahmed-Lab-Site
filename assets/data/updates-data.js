@@ -21,8 +21,8 @@ var SITE_UPDATES = {
       ]
     },
     {
-      "title": "NIH R01 Grant Award — Discovery of Novel Small Molecules for Cancer Therapeutics",
-      "date": "06/09/2022",
+      "title": "NIH R01 Grant Award - Discovery of Novel Small Molecules for Cancer Therapeutics",
+      "date": "06/09/2026",
       "category": "Grant",
       "excerpt": "Syed Kaleem Ahmed, PhD is co-I of an interdisciplinary USC team awarded a three-year, $2 million NIH R01 grant for the project \"Discovery of Novel Small Molecules Targeting a Circadian Regulatory Complex for Cancer Therapeutics.\"",
       "body": "Syed Kaleem Ahmed, PhD is co-I of an interdisciplinary USC team awarded a three-year, $2 million NIH R01 grant on Thursday, June 9 for the project \"Discovery of Novel Small Molecules Targeting a Circadian Regulatory Complex for Cancer Therapeutics.\" Steve Kay, PhD is Project Director/Principal Investigator.",
