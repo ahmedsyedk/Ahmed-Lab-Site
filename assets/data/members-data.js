@@ -35,6 +35,12 @@ var SITE_MEMBERS = {
       "bio": "I am a Masters student in Pharmaceutical Sciences at USC and Research Assistant working under Dr. Syed Ahmed in the Medicinal Chemistry Core. My research focuses on discovery and early development of small-molecule therapeutics, including CALPAIN-2 inhibitors for pulmonary injury, cGAS&ndash;STING antagonists targeting neuroinflammation in Alzheimer&rsquo;s disease, TSPO-directed scaffolds for antifibrotic activity in MASH and a peptide-based oncology effort. I combine structure-guided design and docking with synthesis, purification and analytical characterization&nbsp;and support ADME, PK decision-making. I work closely with collaborators across University of Alabama, USC Mann School Dean&rsquo;s Laboratory and UC Davis to drive cross-disciplinary progress from concept to preclinical validation. In my leisure time I enjoy cooking different cuisines, travelling and watching movies."
     },
     {
+      "name": "TIANYI(TIMOTHY) XIA",
+      "role": "MASTER'S STUDENT, USC MANN",
+      "photo": "assets/images/people/tianyi-xia.jpg",
+      "bio": "<span>I am a second-year Master&rsquo;s student in Dr. Ahmed&rsquo;s Medicinal Chemistry Lab. My&nbsp;</span><span>research focuses on designing and synthesizing novel anti-HSV (Herpes Simplex Virus)&nbsp;</span><span>agents. Before this, I completed my Bachelor&rsquo;s degree in Physiology with a minor in&nbsp;</span><span>Japanese at Michigan State University.</span>"
+    },
+    {
       "name": "PAVAN KUMAR RAMESH",
       "role": "MASTER'S STUDENT, USC VITERBI",
       "photo": "assets/images/people/pavan-kumar-ramesh.jpg",
@@ -45,12 +51,6 @@ var SITE_MEMBERS = {
       "role": "UNDERGRADUATE STUDENT, USC VITERBI",
       "photo": "assets/images/people/eric-tam.jpg",
       "bio": "Eric Tam is an undergraduate student at the University of Southern California majoring in Chemical Engineering with an emphasis in Biological and Pharmaceutical Engineering. He is interested in the intersection of chemistry, medicine, and drug development, specifically how early-stage research can lead to therapies to improve patient outcomes. In the Medicinal Chemistry Core under Dr. Syed K. Ahmed and Dhanvi Gajjar, Eric&rsquo;s research focuses on natural product chemistry where he extracts psiguadial A from guava leaves to evaluate its biological activity. Outside of research, he likes cooking, bouldering, and learning languages."
-    },
-    {
-      "name": "Zihan Hu",
-      "role": "MASTER'S STUDENT, USC",
-      "photo": "assets/images/people/mika.jpeg",
-      "bio": "I'm now a first-year MS student in Molecular Pharmacology and Toxicology. I finished my Bachelor's degree in Chemistry with Medicinal Chemistry at The University of Manchester. My research interests are medicinal chemistry, cancer and drug discovery and development. Apart from academia, I'm a huge car fan and love watching WRC. I'm also a person who can't live without music. I play archery, basketball and watch different kinds of sports."
     }
   ],
   "former": [
@@ -83,12 +83,6 @@ var SITE_MEMBERS = {
       "role": "UNDERGRADUATE STUDENT",
       "photo": "assets/images/people/halina-santos.jpg",
       "bio": "I am currently a third-year student at USC majoring with a B.S. in Pharmacology and Drug Development through the School of Pharmacy. After graduating, I hope to go on to pharmacy school and later have a career in the drug discovery industry. I began working in Dr. Seidler's lab in the Spring of 2022. And then in Dr. Ahmed&rsquo;s Med Chem lab I've been helping Nader Mostowfi with his research on cyclic peptides that could potentially be used as a treatment for Alzheimer's. So far, the experience has been extremely rewarding and a great step to bring me closer to my aspirations in drug development.&nbsp;"
-    },
-    {
-      "name": "TIANYI(TIMOTHY) XIA",
-      "role": "MASTER'S STUDENT, USC MANN",
-      "photo": "assets/images/people/tianyi-xia.jpg",
-      "bio": "<span>I am a second-year Master&rsquo;s student in Dr. Ahmed&rsquo;s Medicinal Chemistry Lab. My&nbsp;</span><span>research focuses on designing and synthesizing novel anti-HSV (Herpes Simplex Virus)&nbsp;</span><span>agents. Before this, I completed my Bachelor&rsquo;s degree in Physiology with a minor in&nbsp;</span><span>Japanese at Michigan State University.</span>"
     }
   ]
 };

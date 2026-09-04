@@ -28,9 +28,6 @@ var SiteLayout = (function () {
         '<div id="logo">' +
           '<span class="wsite-logo">' +
             '<a href="index.html" class="site-logo-link">' +
-              '<span class="logo-mark" aria-hidden="true">' +
-                '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 2h7" /><path d="M10 2v6.5L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8.5V2" /><path d="M7 16h10" /></svg>' +
-              "</span>" +
               '<span id="wsite-title" class="site-logo-lockup">' +
                 '<span class="site-logo-main">The Ahmed <span class="site-logo-accent">Lab</span></span>' +
                 '<span class="site-logo-sub">USC Alfred E. Mann School of Pharmacy and Pharmaceutical Sciences</span>' +

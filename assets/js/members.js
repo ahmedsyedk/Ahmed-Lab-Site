@@ -2,20 +2,6 @@
   var DEFAULT_AVATAR = 'assets/images/ui/default-avatar.svg';
   var modalMembers = [];
 
-  // Highlights "USC" in cardinal and the rest of the affiliation in gold,
-  // e.g. "PHD STUDENT, USC MANN" -> "PHD STUDENT, [USC](red) [MANN](gold)".
-  function highlightUSC(text) {
-    var idx = text.indexOf('USC');
-    if (idx === -1) return text;
-    var before = text.slice(0, idx);
-    var after = text.slice(idx + 3);
-    return (
-      before +
-      '<span class="usc-red-onlight">USC</span>' +
-      '<span class="usc-gold-onlight">' + after + '</span>'
-    );
-  }
-
   function attachFallback(root) {
     root.querySelectorAll('.member-photo img, .team-card__photo img').forEach(function (img) {
       img.addEventListener('error', function () {
@@ -47,7 +33,7 @@
       '<div class="member-photo"><img src="' + member.photo + '" alt="Picture" /></div>' +
       '<div class="member-bio">' +
       '<span class="member-name">' + member.name + '</span>' +
-      '<span class="member-role">' + highlightUSC(member.role) + '</span>' +
+      '<span class="member-role">' + member.role + '</span>' +
       credentials +
       '<div class="member-bio__text">' + member.bio + '</div>' +
       tags +
@@ -65,7 +51,7 @@
       '<div class="team-card__photo"><img src="' + member.photo + '" alt="Picture" /></div>' +
       '<div class="team-card__body">' +
       '<span class="team-card__name">' + member.name + '</span>' +
-      '<span class="team-card__role">' + highlightUSC(member.role) + '</span>' +
+      '<span class="team-card__role">' + member.role + '</span>' +
       '</div>' +
       '</div>'
     );
@@ -119,7 +105,7 @@
       photoEl.src = member.photo;
       photoEl.alt = member.name;
       nameEl.textContent = member.name;
-      roleEl.innerHTML = highlightUSC(member.role);
+      roleEl.textContent = member.role;
       bioEl.innerHTML = member.bio;
       modal.hidden = false;
       document.body.classList.add('member-modal-open');

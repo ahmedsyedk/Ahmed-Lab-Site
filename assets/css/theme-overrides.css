@@ -270,11 +270,7 @@ body {
 .wsite-custom-background {
   background-image: none !important;
 }
-.header-wrap .nav-wrap {
-  background-color: var(--header-bg) !important;
-  background-image: none !important;
-  border-bottom: none !important;
-}
+.header-wrap .nav-wrap,
 .no-header-page .header-wrap .nav-wrap {
   background-color: #ffffff !important;
   background-image: none !important;
