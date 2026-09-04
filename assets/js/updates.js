@@ -47,24 +47,23 @@
     );
   }
 
-  function renderPreviewCard(post, index) {
+  function renderPreviewCard(post) {
     var src = (post.images || [])[0];
     var thumb = src
-      ? '<img class="update-card__thumb" src="' + src + '" alt="' + post.title + '" loading="lazy" />'
+      ? '<img class="update-card__thumb" src="' + src + '" alt="' + post.title + '" />'
       : '';
-    var sizeClass = index === 0 ? ' update-card--featured' : ' update-card--compact';
 
     return (
-      '<a class="update-card' + sizeClass + (src ? '' : ' update-card--no-thumb') + '" href="updates.html">' +
+      '<div class="update-card' + (src ? '' : ' update-card--no-thumb') + '">' +
       thumb +
       '<div class="update-card__body">' +
       '<div class="update-card__meta">' + categoryTag(post.category) +
       '<span class="update-card__date">' + post.date + '</span></div>' +
       '<h3 class="update-card__title">' + post.title + '</h3>' +
       '<p class="update-card__excerpt">' + (post.excerpt || '') + '</p>' +
-      '<span class="update-card__link">Read more &rarr;</span>' +
+      '<a class="update-card__link" href="updates.html">Read more &rarr;</a>' +
       '</div>' +
-      '</a>'
+      '</div>'
     );
   }
 
@@ -151,9 +150,7 @@
     if (listEl) initUpdatesPage(posts);
     if (previewEl) {
       var limit = parseInt(previewEl.getAttribute('data-limit'), 10) || posts.length;
-      previewEl.innerHTML = posts.slice(0, limit).map(function (post, i) {
-        return renderPreviewCard(post, i);
-      }).join('\n');
+      previewEl.innerHTML = posts.slice(0, limit).map(renderPreviewCard).join('\n');
     }
   });
 })();
