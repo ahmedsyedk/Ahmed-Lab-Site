@@ -1,7 +1,7 @@
 //// mobile.js submenu nav - all below
 
 
-Weebly = Weebly || {};
+window.Weebly = window.Weebly || {};
 
 Weebly.mobile_navigation = (function($) {
 
@@ -421,8 +421,8 @@ Weebly.mobile_navigation = (function($) {
         $headerUl = $('#navmobile .wsite-menu-default');
 
         $headerUl.wrap('<div class="wsite-mobile-menu" />');
-        $menu = $headerUl.up('.wsite-mobile-menu');
-        $menuWrapper = $headerUl.up('#wrapper');
+        $menu = $headerUl.closest('.wsite-mobile-menu');
+        $menuWrapper = $headerUl.closest('#wrapper');
         $menuWrapper = ($menuWrapper.length > 0) ? $menuWrapper : $menu;
 
         isOpen = false;
@@ -611,7 +611,11 @@ Weebly.mobile_navigation = (function($) {
         }
         
         initMenu();
-        whenThemeCSSLoaded(initBackground);
+        if (typeof whenThemeCSSLoaded === 'function') {
+            whenThemeCSSLoaded(initBackground);
+        } else {
+            initBackground();
+        }
     };
 
     if (!Weebly.mobile) {
@@ -646,4 +650,4 @@ Weebly.mobile_navigation = (function($) {
         isMenuOpen   : isMenuOpen
     };
 
-}(Weebly.jQuery));
+}(Weebly.jQuery || window.jQuery));
