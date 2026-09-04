@@ -112,23 +112,22 @@
               class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
             >
               <div class="wsite-section-content">
-                <div class="wsite-section-elements site-section">
+                <div class="wsite-section-elements site-section site-section--dark">
                   <div class="site-container">
-                    <span class="site-eyebrow"
-                      >The Ahmed Lab · <span class="usc-red-onlight">USC</span> <span class="usc-gold-onlight">Mann School of Pharmacy</span></span
-                    >
-                    <h2 class="site-heading site-heading--lg">
-                      Where Molecules Become
-                      <span class="site-heading__accent">Medicines</span>
-                    </h2>
-                    <div class="site-rule"></div>
-                    <p class="site-tagline">
-                      Designing the next generation of small-molecule
-                      therapeutics, one bond at a time.
-                    </p>
+                    <div class="research-intro" data-reveal>
+                      <span class="site-eyebrow site-eyebrow--left">Our Research</span>
+                      <h2 class="site-heading site-heading--lg research-intro__heading">
+                        Where molecules become medicines
+                      </h2>
+                      <p class="site-tagline research-intro__lede">
+                        Designing the next generation of small-molecule
+                        therapeutics, one bond at a time.
+                      </p>
+                    </div>
 
-                    <div class="focus-grid">
-                      <div class="focus-card">
+                    <div id="research-focus" class="focus-grid" data-reveal-group>
+                      <div class="focus-card focus-card--featured">
+                        <span class="focus-card__index">01</span>
                         <div class="focus-card__icon">
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 8.5V2" /><path d="M8.5 2h7" /><path d="M7 16h10" /></svg>
                         </div>
@@ -139,6 +138,7 @@
                         </p>
                       </div>
                       <div class="focus-card">
+                        <span class="focus-card__index">02</span>
                         <div class="focus-card__icon">
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a5 5 0 0 0-5 5c0 1.5.7 2.4 1.5 3.3C9.3 11 10 12 10 13.5V22h4v-8.5c0-1.5.7-2.5 1.5-3.2.8-.9 1.5-1.8 1.5-3.3a5 5 0 0 0-5-5z" /></svg>
                         </div>
@@ -149,6 +149,7 @@
                         </p>
                       </div>
                       <div class="focus-card">
+                        <span class="focus-card__index">03</span>
                         <div class="focus-card__icon">
                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /></svg>
                         </div>
@@ -160,23 +161,28 @@
                       </div>
                     </div>
 
-                    <div class="intro-grid" style="margin-top: var(--space-lg)">
-                      <div class="intro-grid__image">
-                        <img
-                          src="assets/images/gallery/research-overview.png"
-                          alt="Picture"
-                        />
-                      </div>
-                      <div class="intro-grid__text">
-                        Our research interests include bioorganic and medicinal
-                        chemistry, structure/ligand-based drug design and
-                        development, biorthogonal chemistry, heterocyclic
-                        chemistry, mechanistic study of novel small-molecule
-                        modulators of diverse range of therapeutic targets, and
-                        development of new synthetic methodologies.
-                        <div style="margin-top: 32px">
-                          <a class="btn-site" href="contact.html">Contact us</a>
+                    <div class="research-spotlight" data-reveal>
+                      <div class="research-spotlight__visual">
+                        <span class="research-spotlight__glow" aria-hidden="true"></span>
+                        <div class="research-spotlight__plate">
+                          <img
+                            src="assets/images/gallery/research-overview.png"
+                            alt="Ribbon diagram of a target protein structure with key ligand-binding residues labeled"
+                          />
                         </div>
+                      </div>
+                      <div class="research-spotlight__content">
+                        <span class="site-eyebrow site-eyebrow--left site-eyebrow--onnavy">Research Approach</span>
+                        <h2 class="research-spotlight__heading">Chemistry guided by biological structure</h2>
+                        <p class="research-spotlight__text">
+                          Our research interests include bioorganic and medicinal
+                          chemistry, structure/ligand-based drug design and
+                          development, biorthogonal chemistry, heterocyclic
+                          chemistry, mechanistic study of novel small-molecule
+                          modulators of diverse range of therapeutic targets, and
+                          development of new synthetic methodologies.
+                        </p>
+                        <a class="btn-site btn-site--accent" href="#research-focus">Explore our research &rarr;</a>
                       </div>
                     </div>
                   </div>
@@ -193,24 +199,23 @@
                   class="wsite-section-elements site-section site-section--alt"
                 >
                   <div class="site-container">
-                    <h2 class="site-heading">
-                      Fresh From The
-                      <span class="site-heading__accent">Lab</span>
-                    </h2>
-                    <div class="site-rule"></div>
-                    <p class="site-subtext">
-                      Recent news, awards, and publications from the Ahmed Lab.
-                    </p>
+                    <div class="section-header section-header--split" data-reveal>
+                      <div>
+                        <span class="site-eyebrow site-eyebrow--left">Lab News</span>
+                        <h2 class="site-heading site-heading--lg research-intro__heading">Fresh from the lab</h2>
+                        <p class="site-tagline site-tagline--left">
+                          Recent news, awards, and publications from the Ahmed Lab.
+                        </p>
+                      </div>
+                      <a class="section-header__link" href="updates.html">View all updates &rarr;</a>
+                    </div>
 
                     <div
                       id="updates-preview"
                       class="updates-preview-grid"
                       data-limit="2"
+                      data-reveal-group
                     ></div>
-
-                    <div class="updates-preview__footer">
-                      <a class="btn-site" href="updates.html">View All Updates</a>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -223,51 +228,51 @@
               <div class="wsite-section-content">
                 <div class="wsite-section-elements site-section">
                   <div class="site-container">
-                    <h2 class="site-heading">
-                      Behind The <span class="site-heading__accent">Bench</span>
-                    </h2>
-                    <div class="site-rule"></div>
-                    <p class="site-subtext">
-                      A look inside the lab — the people, the process, and the
-                      milestones along the way.
-                    </p>
+                    <div class="bench-heading" data-reveal>
+                      <h2 class="bench-heading__title">Behind the bench</h2>
+                      <p class="bench-heading__text">
+                        A look inside the lab — the people, the process, and the
+                        milestones along the way.
+                      </p>
+                    </div>
 
-                    <div class="gallery-grid">
+                    <div class="gallery-grid" data-reveal-group>
                       <div class="gallery-grid__feature">
                         <img
                           src="assets/images/gallery/lab-group-photo.jpg"
-                          alt="Picture"
+                          alt="Ahmed Lab group photo"
+                          loading="lazy"
                         />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-01.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-01.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-02.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-02.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-03.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-03.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-04.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-04.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-05.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-05.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-06.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-06.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-07.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-07.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-08.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-08.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-09.jpg" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-09.jpg" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                       <div class="gallery-grid__tile">
-                        <img src="assets/images/gallery/gallery-10.png" alt="Picture" />
+                        <img src="assets/images/gallery/gallery-10.png" alt="Lab member working at the bench" loading="lazy" />
                       </div>
                     </div>
                   </div>
@@ -280,9 +285,9 @@
               class="wsite-section wsite-body-section wsite-background-9 wsite-custom-background"
             >
               <div class="wsite-section-content">
-                <div class="wsite-section-elements" style="padding: 24px 0 90px">
+                <div class="wsite-section-elements cta-section">
                   <div class="site-container">
-                    <div class="cta-band">
+                    <div class="cta-band" data-reveal>
                       <h2 class="cta-band__title">Interested in Joining the Lab?</h2>
                       <p class="cta-band__text">
                         We're always looking to hear from motivated students
@@ -360,5 +365,6 @@
     <script type="text/javascript" src="assets/js/updates.js"></script>
     <script type="text/javascript" src="assets/js/gallery.js"></script>
     <script type="text/javascript" src="assets/js/hero-video.js"></script>
+    <script type="text/javascript" src="assets/js/scroll-reveal.js"></script>
   </body>
 </html>
