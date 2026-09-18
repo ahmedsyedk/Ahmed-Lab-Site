@@ -1,6 +1,17 @@
 var SITE_UPDATES = {
   "posts": [
     {
+      "title": "USC Provost's Undergraduate Research Fellowship Awarded to Eric",
+      "date": "09/18/2026",
+      "category": "Award",
+      "excerpt": "Eric, an undergraduate student in the lab, has been awarded the USC Provost's Undergraduate Research Fellowship to support independent research evaluating the biological activity of Psiguadial A against HIF-alpha targets. Congratulations, Eric!",
+      "body": "Congratulations to Eric, an undergraduate student in the lab, on being awarded the <strong>USC Provost's Undergraduate Research Fellowship</strong>! The fellowship recognizes his preliminary work in natural product chemistry isolating Psiguadial A from guava leaves, carried out under the guidance of Dhanvi Gajjar. With this award, Eric will dedicate 10 weeks to independent research under USC faculty mentorship, conducting high-level experiments, collecting and analyzing data, and contributing to ongoing work in natural product chemistry as he evaluates the biological activity of Psiguadial A against HIF-alpha targets.",
+      "images": [
+        "assets/images/updates/eric-purf-award-1.png",
+        "assets/images/updates/eric-purf-award-2.png"
+      ]
+    },
+    {
       "title": "2026 Broad Center–SPARK at USC Innovation Catalyst Grant in Regenerative Medicine",
       "date": "08/24/2026",
       "category": "Grant",
