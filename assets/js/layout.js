@@ -8,15 +8,18 @@ var SiteLayout = (function () {
     { key: "home", href: "index.html", label: "Home" },
     { key: "members", href: "members.html", label: "Team" },
     { key: "updates", href: "updates.html", label: "Updates" },
+    { key: "join-us", href: "join-us.html", label: "Join Us" },
     { key: "contact", href: "contact.html", label: "Contact" }
   ];
 
   function menuItems(activeKey) {
     return PAGES.map(function (page) {
-      var activeAttr = page.key === activeKey ? ' id="active"' : "";
+      var isActive = page.key === activeKey;
+      var activeAttr = isActive ? ' id="active"' : "";
+      var currentAttr = isActive ? ' aria-current="page"' : "";
       return (
         "<li" + activeAttr + ' class="wsite-menu-item-wrap">' +
-        '<a href="' + page.href + '" class="wsite-menu-item"> ' + page.label + " </a>" +
+        '<a href="' + page.href + '" class="wsite-menu-item"' + currentAttr + "> " + page.label + " </a>" +
         "</li>"
       );
     }).join("");
@@ -74,10 +77,9 @@ var SiteLayout = (function () {
                   '<div class="site-footer__col">' +
                     '<span class="site-footer__heading">Quick Links</span>' +
                     '<nav class="site-footer__nav" aria-label="Footer">' +
-                      '<a href="index.html">Home</a>' +
-                      '<a href="members.html">Team</a>' +
-                      '<a href="updates.html">Updates</a>' +
-                      '<a href="contact.html">Contact</a>' +
+                      PAGES.map(function (page) {
+                        return '<a href="' + page.href + '">' + page.label + "</a>";
+                      }).join("") +
                     "</nav>" +
                   "</div>" +
                   '<div class="site-footer__col">' +

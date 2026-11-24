@@ -117,6 +117,7 @@ This site is hosted on GitHub Pages and automatically redeploys whenever changes
 - `index.html` — Home page
 - `members.html` — Lab members
 - `updates.html` — News/updates
+- `join-us.html` — Current opportunities. To add a posting, copy an `<article class="opportunity">` block inside the listings, update its content and application link, and give each copied heading ID and matching `aria-labelledby` reference a unique value.
 - `contact.html` — Contact page
 - `favicon.svg` — Browser tab icon
 - `assets/` — Everything the pages load:
@@ -125,7 +126,7 @@ This site is hosted on GitHub Pages and automatically redeploys whenever changes
     - `site-theme.css` — custom design system (typography, layout, components) layered on top of the theme
     - `theme-overrides.css` — targeted overrides of legacy theme rules
   - `js/`
-    - `layout.js` — single source of truth for the header nav, mobile nav, and footer markup, shared by all four pages (see [Shared header/nav/footer](#shared-headernavfooter) below)
+    - `layout.js` — single source of truth for the header nav, mobile nav, and footer markup, shared by all pages (see [Shared header/nav/footer](#shared-headernavfooter) below)
     - `members.js` / `updates.js` — render the content data into the DOM on `members.html`, `updates.html`, and the homepage's "Latest Updates" preview
   - `data/`
     - `members-data.js` / `updates-data.js` — the editable content described above, loaded as plain JS globals (`SITE_MEMBERS`, `SITE_UPDATES`) rather than fetched JSON, so the site also works when opened directly via `file://` without a web server
@@ -159,7 +160,7 @@ The logo, top nav, mobile nav, and footer are identical on every page, so they'r
 </header>
 ```
 
-`SiteLayout.mount` synchronously replaces the placeholder `<div>` with the real markup, before the browser paints it, so there's no flash of an empty header. The active-page keys are `"home"`, `"members"`, `"updates"`, `"contact"`.
+`SiteLayout.mount` synchronously replaces the placeholder `<div>` with the real markup, before the browser paints it, so there's no flash of an empty header. The active-page keys are `"home"`, `"members"`, `"updates"`, `"join-us"`, `"contact"`.
 
 **If you add a new page**, add it to the `PAGES` list at the top of `assets/js/layout.js` and it will automatically show up in the nav (desktop and mobile) on every page — you don't need to touch the other HTML files.
 
